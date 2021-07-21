@@ -1,0 +1,2115 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Griffin Technology - Slim Folio Case for Apple® iPad® mini, iPad mini 2 and iPad mini 3 - Black",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Computers & Tablets",
+        "iPad & Tablet Accessories",
+        "iPad Accessories"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories",
+        "lvl2": "Computers & Tablets > iPad & Tablet Accessories > iPad Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 34.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6637054_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 2,
+      "name": "Griffin Technology - StereoConnect Cable for Most Portable Audio Devices",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cables & Chargers", "MP3 Player Cables"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cables & Chargers",
+        "lvl2": "Audio > Cables & Chargers > MP3 Player Cables"
+      },
+      "type": "Connectivity",
+      "price": 22.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9225581_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 3,
+      "name": "Griffin Technology - Survivor All-Terrain Case for Samsung Galaxy Tab S 8.4 - Black",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Computers & Tablets",
+        "iPad & Tablet Accessories",
+        "Cases"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories",
+        "lvl2": "Computers & Tablets > iPad & Tablet Accessories > Cases"
+      },
+      "type": "Non ipad cases",
+      "price": 64.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9496144_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 4,
+      "name": "Griffin Technology - Survivor AUX 4' Auxiliary Audio Cable - Blue",
+      "brand": "Griffin Technology",
+      "categories": ["Musical Instruments", "Musical Instrument Cables"],
+      "hierarchicalCategories": {
+        "lvl0": "Musical Instruments",
+        "lvl1": "Musical Instruments > Musical Instrument Cables"
+      },
+      "type": "Connectivity",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1383803_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 5,
+      "name": "Griffin Technology - Survivor Case for 5th-Generation Apple® iPod® touch - Black",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cases & Armbands", "All Cases & Armbands"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cases & Armbands",
+        "lvl2": "Audio > Cases & Armbands > All Cases & Armbands"
+      },
+      "type": "Mp3 cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6560308_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 6,
+      "name": "Griffin Technology - Survivor Case for 5th-Generation Apple® iPod® touch - Black/Blue",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cases & Armbands", "All Cases & Armbands"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cases & Armbands",
+        "lvl2": "Audio > Cases & Armbands > All Cases & Armbands"
+      },
+      "type": "Mp3 cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6560186_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 7,
+      "name": "Griffin Technology - Survivor Case for 5th-Generation Apple® iPod® touch - Pink/White",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cases & Armbands", "All Cases & Armbands"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cases & Armbands",
+        "lvl2": "Audio > Cases & Armbands > All Cases & Armbands"
+      },
+      "type": "Mp3 cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6560362_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 8,
+      "name": "Griffin Technology - Survivor Case for Apple® iPad® 2nd-, 3rd- and 4th-Generation - Black",
+      "brand": "Griffin Technology",
+      "categories": ["Computers & Tablets", "iPad & Tablet Accessories"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 79.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2490083_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 9,
+      "name": "CybertronPC - Patriot Desktop - AMD A4-Series - 8GB Memory - 1TB Hard Drive - Blue",
+      "brand": "CybertronPC",
+      "categories": ["Computers & Tablets", "All Desktops"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > All Desktops"
+      },
+      "type": "So gaming pc",
+      "price": 499.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1625356_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "name": "Frigidaire - Gallery 27.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water - Stainless-Steel",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerators", "All Refrigerators"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerators",
+        "lvl2": "Appliances > Refrigerators > All Refrigerators"
+      },
+      "type": "French door refrig",
+      "price": 2449.99,
+      "price_range": "> 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8338047_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 11,
+      "name": "Frigidaire - Gallery 30\" Self-Cleaning Freestanding Double Oven Electric Convection Range - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Electric Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Electric Ranges"
+      },
+      "type": "Electric range",
+      "price": 1599.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4206005_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 12,
+      "name": "Frigidaire - Gallery 30\" Self-Cleaning Freestanding Electric Convection Induction Range - Stainless-Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Electric Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Electric Ranges"
+      },
+      "type": "Electric range",
+      "price": 1699.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1558487_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 13,
+      "name": "Frigidaire - Gallery 30\" Self-Cleaning Freestanding Electric Convection Range - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Electric Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Electric Ranges"
+      },
+      "type": "So elec range region",
+      "price": 999.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4749028_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 14,
+      "name": "Frigidaire - Gallery 30\" Self-Cleaning Freestanding Electric Convection Range - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Electric Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Electric Ranges"
+      },
+      "type": "Electric range",
+      "price": 899.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4753022_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 15,
+      "name": "Frigidaire - Gallery 30\" Self-Cleaning Freestanding Electric Range - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Electric Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Electric Ranges"
+      },
+      "type": "Electric range",
+      "price": 799.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1861131_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 16,
+      "name": "Frigidaire - Gallery 30\" Self-Cleaning Freestanding Gas Range - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Gas Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Gas Ranges"
+      },
+      "type": "Gas range",
+      "price": 849.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1829365_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 17,
+      "name": "Frigidaire - Gallery 5.0 Cu. Ft. Freestanding Gas Convection Range - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Gas Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Gas Ranges"
+      },
+      "type": "So gas range region",
+      "price": 1049.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/5206012_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 18,
+      "name": "Frigidaire - Gallery 5.0 Cu. Ft. Self-Cleaning Freestanding Gas Convection Range - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Ranges, Cooktops & Ovens",
+        "Ranges",
+        "Gas Ranges"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Ranges, Cooktops & Ovens",
+        "lvl2": "Appliances > Ranges, Cooktops & Ovens > Ranges",
+        "lvl3": "Appliances > Ranges, Cooktops & Ovens > Ranges > Gas Ranges"
+      },
+      "type": "Gas range",
+      "price": 999.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/5012138_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 19,
+      "name": "Frigidaire - Pan Treatment Tablets (6-Pack)",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Air Conditioners"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Air Conditioners"
+      },
+      "type": "Ac accessories",
+      "price": 5.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9789325_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 20,
+      "name": "Frigidaire - Professional 12-Cup Coffeemaker",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Small Kitchen Appliances",
+        "Coffee, Tea & Espresso",
+        "Coffee Makers",
+        "Coffee Makers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso",
+        "lvl3": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso > Coffee Makers",
+        "lvl4": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso > Coffee Makers > Coffee Makers"
+      },
+      "type": "Coffee/cappuccino",
+      "price": 79.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/3278145_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 21,
+      "name": "Frigidaire - Professional Infrared Convection Toaster Oven - Stainless-Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Small Kitchen Appliances",
+        "Toaster & Pizza Ovens",
+        "Toaster Ovens"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Toaster & Pizza Ovens",
+        "lvl3": "Appliances > Small Kitchen Appliances > Toaster & Pizza Ovens > Toaster Ovens"
+      },
+      "type": "Toaster ovens",
+      "price": 149.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/3278181_rb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 22,
+      "name": "Frigidaire - PureAir Ultra Replacement Air Filter Cartridge",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerator Air Filters"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerator Air Filters"
+      },
+      "type": "Dc filter",
+      "price": 17.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9679808_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 23,
+      "name": "Frigidaire - PureSource Replacement Water Filter",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerator Water Filters"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerator Water Filters"
+      },
+      "type": "Dc filter",
+      "price": 32.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4226233_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 24,
+      "name": "Frigidaire - PureSource Ultra Refrigerator Water Filter",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerator Water Filters"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerator Water Filters"
+      },
+      "type": "Dc filter",
+      "price": 48.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9679744_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 25,
+      "name": "Frigidaire - PureSource2™ Replacement Water Filter",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerator Water Filters"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerator Water Filters"
+      },
+      "type": "Dc filter",
+      "price": 43.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4210302_rb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 26,
+      "name": "Frigidaire - PureSource3 Replacement Water Filter",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerator Water Filters"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerator Water Filters"
+      },
+      "type": "Dc filter",
+      "price": 40.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1251044_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 27,
+      "name": "Frigidaire - PureSourcePlus Replacement Water Filter",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerator Water Filters"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerator Water Filters"
+      },
+      "type": "Dc filter",
+      "price": 35.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4210268_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 28,
+      "name": "Frigidaire - Semi-Rigid Dryer Vent Kit Required for Hook-Up - Silver",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Dryer Accessories"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Dryer Accessories"
+      },
+      "type": "Dryer vents",
+      "price": 26.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9282812_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 29,
+      "name": "FUGOO - Sport Waterproof Bluetooth Speaker - Black/Blue",
+      "brand": "FUGOO",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 199.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2269135_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 30,
+      "name": "FUGOO - Style Waterproof Bluetooth Wireless Speaker - Silver",
+      "brand": "FUGOO",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 179.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2269126_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 31,
+      "name": "FUGOO - Style XL Portable Bluetooth Speaker - Sand/Black",
+      "brand": "FUGOO",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 279.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4290805_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 32,
+      "name": "FUGOO - Tough Bluetooth Wireless Speaker - Black/Aluminum",
+      "brand": "FUGOO",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 229.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2269144_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 33,
+      "name": "FUGOO - Tough XL Portable Bluetooth Speaker - Black/Aluminum",
+      "brand": "FUGOO",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 329.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4290812_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 34,
+      "name": "Fujifilm - 2011 Bowler Bag",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Camera Accessories",
+        "Camera Bags & Cases"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Camera Accessories",
+        "lvl2": "Cameras & Camcorders > Digital Camera Accessories > Camera Bags & Cases"
+      },
+      "type": "So camera accy",
+      "price": 39.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4181112_rb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 35,
+      "name": "Fujifilm - Fujinon XF 18-135mm f/3.5-5.6 R LM OIS WR Zoom Lens for Select Fujifilm X-Series Cameras - Black",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Camera Accessories",
+        "Camera Lenses",
+        "Mirrorless Lenses"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Camera Accessories",
+        "lvl2": "Cameras & Camcorders > Digital Camera Accessories > Camera Lenses",
+        "lvl3": "Cameras & Camcorders > Digital Camera Accessories > Camera Lenses > Mirrorless Lenses"
+      },
+      "type": "Mirrorless lenses",
+      "price": 899.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/7468115_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 36,
+      "name": "Fujifilm - FUJINON XF 35mm f/1.4 R Standard Lens for Fujifilm X-Mount System Cameras - Black",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Camera Accessories",
+        "Camera Lenses",
+        "Mirrorless Lenses"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Camera Accessories",
+        "lvl2": "Cameras & Camcorders > Digital Camera Accessories > Camera Lenses",
+        "lvl3": "Cameras & Camcorders > Digital Camera Accessories > Camera Lenses > Mirrorless Lenses"
+      },
+      "type": "Mirrorless lenses",
+      "price": 599.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4922347_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 37,
+      "name": "Fujifilm - Instax Groovy Camera Case - Blue",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Camera Accessories",
+        "Camera Accessory Kits"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Camera Accessories",
+        "lvl2": "Cameras & Camcorders > Digital Camera Accessories > Camera Accessory Kits"
+      },
+      "type": "Misc camera acces",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6409177_rb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 38,
+      "name": "Fujifilm - instax mini 8 Instant Film Camera - Black",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "All Point & Shoot Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > All Point & Shoot Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1319367_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 39,
+      "name": "Fujifilm - instax mini 8 Instant Film Camera - Blue",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "All Point & Shoot Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > All Point & Shoot Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1319385_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 40,
+      "name": "Fujifilm - instax Mini 8 Instant Film Camera - Grape",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "Instant Print Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > Instant Print Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4295176_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 41,
+      "name": "Fujifilm - instax mini 8 Instant Film Camera - Pink",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "Childrens Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > Childrens Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1319394_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 42,
+      "name": "Fujifilm - instax Mini 8 Instant Film Camera - Raspberry",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "Childrens Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > Childrens Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4295185_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 43,
+      "name": "Fujifilm - instax mini 8 Instant Film Camera - Vivid Orange",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "Childrens Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > Childrens Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4594400_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 44,
+      "name": "Fujifilm - instax mini 8 Instant Film Camera - White",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "All Point & Shoot Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > All Point & Shoot Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1319409_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 45,
+      "name": "Fujifilm - instax mini 8 Instant Film Camera - Yellow",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "All Point & Shoot Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > All Point & Shoot Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1319358_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 46,
+      "name": "Fujifilm - instax mini 90 NEO CLASSIC Instant Film Camera - Black",
+      "brand": "Fujifilm",
+      "categories": [
+        "Cameras & Camcorders",
+        "Digital Cameras",
+        "Point & Shoot Cameras",
+        "All Point & Shoot Cameras"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cameras & Camcorders",
+        "lvl1": "Cameras & Camcorders > Digital Cameras",
+        "lvl2": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras",
+        "lvl3": "Cameras & Camcorders > Digital Cameras > Point & Shoot Cameras > All Point & Shoot Cameras"
+      },
+      "type": "Digital cameras",
+      "price": 199.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4120173_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 47,
+      "name": "Griffin Technology - Protector Case for 7th-Generation Apple® iPod® nano - Black",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cases & Armbands", "All Cases & Armbands"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cases & Armbands",
+        "lvl2": "Audio > Cases & Armbands > All Cases & Armbands"
+      },
+      "type": "Mp3 cases",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6577222_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 48,
+      "name": "Griffin Technology - Reveal Case for Apple® iPhone® 5 and 5s - Fluoro Fire/Clear",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Cell Phones",
+        "Cell Phone Accessories",
+        "iPhone Accessories",
+        "iPhone Cases & Clips"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cell Phones",
+        "lvl1": "Cell Phones > Cell Phone Accessories",
+        "lvl2": "Cell Phones > Cell Phone Accessories > iPhone Accessories",
+        "lvl3": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips"
+      },
+      "type": "Slim cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6460187_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 49,
+      "name": "Griffin Technology - Reveal Case for Apple® iPhone® 5c - Pink",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Cell Phones",
+        "Cell Phone Accessories",
+        "iPhone Accessories",
+        "iPhone Cases & Clips"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cell Phones",
+        "lvl1": "Cell Phones > Cell Phone Accessories",
+        "lvl2": "Cell Phones > Cell Phone Accessories > iPhone Accessories",
+        "lvl3": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips"
+      },
+      "type": "Slim cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1762255_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 50,
+      "name": "Griffin Technology - Reveal Hard Shell Case for Apple® iPhone® 6 - Hot Pink",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Cell Phones",
+        "Cell Phone Accessories",
+        "iPhone Accessories",
+        "iPhone Cases & Clips"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cell Phones",
+        "lvl1": "Cell Phones > Cell Phone Accessories",
+        "lvl2": "Cell Phones > Cell Phone Accessories > iPhone Accessories",
+        "lvl3": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips"
+      },
+      "type": "Slim cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8093187_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 51,
+      "name": "Griffin Technology - Screen Care Kit for 4th-Generation Apple® iPod® touch",
+      "brand": "Griffin Technology",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Mp3 screen protect",
+      "price": 17.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1207936_rb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 52,
+      "name": "Griffin Technology - Slim Folio Case for Apple® iPad® mini, iPad mini 2 and iPad mini 3 - Black",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Computers & Tablets",
+        "iPad & Tablet Accessories",
+        "iPad Accessories"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories",
+        "lvl2": "Computers & Tablets > iPad & Tablet Accessories > iPad Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 34.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6637054_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 53,
+      "name": "Griffin Technology - StereoConnect Cable for Most Portable Audio Devices",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cables & Chargers", "MP3 Player Cables"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cables & Chargers",
+        "lvl2": "Audio > Cables & Chargers > MP3 Player Cables"
+      },
+      "type": "Connectivity",
+      "price": 22.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9225581_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 54,
+      "name": "Griffin Technology - Survivor All-Terrain Case for Samsung Galaxy Tab S 8.4 - Black",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Computers & Tablets",
+        "iPad & Tablet Accessories",
+        "Cases"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories",
+        "lvl2": "Computers & Tablets > iPad & Tablet Accessories > Cases"
+      },
+      "type": "Non ipad cases",
+      "price": 64.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9496144_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 55,
+      "name": "Griffin Technology - Survivor AUX 4' Auxiliary Audio Cable - Blue",
+      "brand": "Griffin Technology",
+      "categories": ["Musical Instruments", "Musical Instrument Cables"],
+      "hierarchicalCategories": {
+        "lvl0": "Musical Instruments",
+        "lvl1": "Musical Instruments > Musical Instrument Cables"
+      },
+      "type": "Connectivity",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1383803_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 56,
+      "name": "Griffin Technology - Survivor Case for 5th-Generation Apple® iPod® touch - Black",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cases & Armbands", "All Cases & Armbands"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cases & Armbands",
+        "lvl2": "Audio > Cases & Armbands > All Cases & Armbands"
+      },
+      "type": "Mp3 cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6560308_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 57,
+      "name": "Griffin Technology - Survivor Case for 5th-Generation Apple® iPod® touch - Black/Blue",
+      "brand": "Griffin Technology",
+      "categories": ["Audio", "Cases & Armbands", "All Cases & Armbands"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio",
+        "lvl1": "Audio > Cases & Armbands",
+        "lvl2": "Audio > Cases & Armbands > All Cases & Armbands"
+      },
+      "type": "Mp3 cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6560186_sb.jpg",
+      "free_shipping": false,
+      "popularity": 6409,
+      "rating": 2
+    },
+    {
+      "id": 58,
+      "name": "Griffin Technology - Reveal Case for Apple® iPhone® 5c - Pink",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Cell Phones",
+        "Cell Phone Accessories",
+        "iPhone Accessories",
+        "iPhone Cases & Clips"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cell Phones",
+        "lvl1": "Cell Phones > Cell Phone Accessories",
+        "lvl2": "Cell Phones > Cell Phone Accessories > iPhone Accessories",
+        "lvl3": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips"
+      },
+      "type": "Slim cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1762255_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 59,
+      "name": "Griffin Technology - Reveal Hard Shell Case for Apple® iPhone® 6 - Hot Pink",
+      "brand": "Griffin Technology",
+      "categories": [
+        "Cell Phones",
+        "Cell Phone Accessories",
+        "iPhone Accessories",
+        "iPhone Cases & Clips"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cell Phones",
+        "lvl1": "Cell Phones > Cell Phone Accessories",
+        "lvl2": "Cell Phones > Cell Phone Accessories > iPhone Accessories",
+        "lvl3": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips"
+      },
+      "type": "Slim cases",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8093187_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 60,
+      "name": "Griffin Technology - Screen Care Kit for 4th-Generation Apple® iPod® touch",
+      "brand": "Griffin Technology",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Mp3 screen protect",
+      "price": 17.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1207936_rb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 61,
+      "name": "Frigidaire - Gallery 24\" Tall Tub Built-In Dishwasher - Black",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Dishwashers", "Built-In Dishwashers"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Dishwashers",
+        "lvl2": "Appliances > Dishwashers > Built-In Dishwashers"
+      },
+      "type": "So dishwasher soap",
+      "price": 449.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/5618195_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 62,
+      "name": "Frigidaire - Gallery 24\" Tall Tub Built-In Dishwasher - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Dishwashers", "Built-In Dishwashers"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Dishwashers",
+        "lvl2": "Appliances > Dishwashers > Built-In Dishwashers"
+      },
+      "type": "Dishwasher",
+      "price": 889.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4446024_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 63,
+      "name": "Frigidaire - Gallery 24\" Tall Tub Built-In Dishwasher - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Dishwashers", "Built-In Dishwashers"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Dishwashers",
+        "lvl2": "Appliances > Dishwashers > Built-In Dishwashers"
+      },
+      "type": "Dishwasher",
+      "price": 599.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6417006_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 64,
+      "name": "Frigidaire - Gallery 24\" Tall Tub Built-In Dishwasher - Stainless-Steel",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Dishwashers", "Built-In Dishwashers"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Dishwashers",
+        "lvl2": "Appliances > Dishwashers > Built-In Dishwashers"
+      },
+      "type": "Dishwasher",
+      "price": 499.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8866309_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 65,
+      "name": "Frigidaire - Gallery 24\" Tall Tub Built-In Dishwasher - Stainless-Steel",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Dishwashers", "Built-In Dishwashers"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Dishwashers",
+        "lvl2": "Appliances > Dishwashers > Built-In Dishwashers"
+      },
+      "type": "Dishwasher",
+      "price": 699.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4122002_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 66,
+      "name": "Frigidaire - Gallery 24\" Tall Tub Built-In Dishwasher - White",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Dishwashers", "Built-In Dishwashers"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Dishwashers",
+        "lvl2": "Appliances > Dishwashers > Built-In Dishwashers"
+      },
+      "type": "So dishwasher soap",
+      "price": 499.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8636561_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 67,
+      "name": "Frigidaire - Gallery 26.0 Cu. Ft. Frost-Free Side-by-Side Refrigerator with Thru-the-Door Ice and Water - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerators", "All Refrigerators"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerators",
+        "lvl2": "Appliances > Refrigerators > All Refrigerators"
+      },
+      "type": "Side by side",
+      "price": 1299.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8337057_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 68,
+      "name": "Frigidaire - Gallery 26.0 Cu. Ft. Frost-Free Side-by-Side Refrigerator with Thru-the-Door Ice and Water - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": [
+        "Appliances",
+        "Refrigerators",
+        "Side-by-Side Refrigerators"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerators",
+        "lvl2": "Appliances > Refrigerators > Side-by-Side Refrigerators"
+      },
+      "type": "Side by side",
+      "price": 1499.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8338056_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 69,
+      "name": "Frigidaire - Gallery 27.7 Cu. Ft. French Door Refrigerator - Stainless Steel",
+      "brand": "Frigidaire",
+      "categories": ["Appliances", "Refrigerators", "All Refrigerators"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Refrigerators",
+        "lvl2": "Appliances > Refrigerators > All Refrigerators"
+      },
+      "type": "So fr dr refrig soap",
+      "price": 2149.99,
+      "price_range": "> 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1648747_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 70,
+      "name": "CybertronPC - Titan 17.3\" Laptop - Intel Core i7 - 32GB Memory - 1TB Hard Drive + 120GB Solid State Drive - Black",
+      "brand": "CybertronPC",
+      "categories": ["Computers & Tablets", "Laptops", "All Laptops"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Laptops",
+        "lvl2": "Computers & Tablets > Laptops > All Laptops"
+      },
+      "type": "So gaming laptops",
+      "price": 2199.99,
+      "price_range": "> 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6947044_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 71,
+      "name": "CybertronPC - Trooper Desktop - AMD Athlon II X3 - 8GB Memory - 1TB Hard Drive - Black",
+      "brand": "CybertronPC",
+      "categories": ["Computers & Tablets", "All Desktops"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > All Desktops"
+      },
+      "type": "So gaming pc",
+      "price": 579.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1625383_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 72,
+      "name": "CybertronPC - ViperX7 Desktop - Intel Core i7 - 8GB Memory - 1TB Hard Drive - Blue",
+      "brand": "CybertronPC",
+      "categories": ["Computers & Tablets", "All Desktops"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > All Desktops"
+      },
+      "type": "So gaming pc",
+      "price": 1099.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9990181_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 73,
+      "name": "Cynthia Vincent - 13\" Laptop Sleeve - Snake Border",
+      "brand": "Cynthia Vincent",
+      "categories": [
+        "Computers & Tablets",
+        "Laptop Accessories",
+        "Laptop Bags & Cases"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Laptop Accessories",
+        "lvl2": "Computers & Tablets > Laptop Accessories > Laptop Bags & Cases"
+      },
+      "type": "Business cases",
+      "price": 9.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1591029_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 74,
+      "name": "Cynthia Vincent - Case for Apple® iPhone® 6 and 6s - Pink/Gold",
+      "brand": "Cynthia Vincent",
+      "categories": [
+        "Cell Phones",
+        "Cell Phone Accessories",
+        "iPhone Accessories",
+        "iPhone Cases & Clips",
+        "iPhone 6 Cases"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cell Phones",
+        "lvl1": "Cell Phones > Cell Phone Accessories",
+        "lvl2": "Cell Phones > Cell Phone Accessories > iPhone Accessories",
+        "lvl3": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips",
+        "lvl4": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips > iPhone 6 Cases"
+      },
+      "type": "Trend cases",
+      "price": 9.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1750449_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 75,
+      "name": "Cynthia Vincent - Case for Apple® iPhone® 6 Plus and 6s Plus - Blue",
+      "brand": "Cynthia Vincent",
+      "categories": [
+        "Cell Phones",
+        "Cell Phone Accessories",
+        "iPhone Accessories",
+        "iPhone Cases & Clips",
+        "iPhone 6 Plus Cases"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Cell Phones",
+        "lvl1": "Cell Phones > Cell Phone Accessories",
+        "lvl2": "Cell Phones > Cell Phone Accessories > iPhone Accessories",
+        "lvl3": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips",
+        "lvl4": "Cell Phones > Cell Phone Accessories > iPhone Accessories > iPhone Cases & Clips > iPhone 6 Plus Cases"
+      },
+      "type": "Trend cases",
+      "price": 9.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1750257_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 76,
+      "name": "Cynthia Vincent - Folio Case for Apple® iPad® Air 2 - Multi",
+      "brand": "Cynthia Vincent",
+      "categories": ["Computers & Tablets", "iPad & Tablet Accessories"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 9.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/1757319_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 77,
+      "name": "Apple - Smart Cover for Apple iPad® mini, iPad mini 2 and iPad mini 3 - Red",
+      "brand": "Apple",
+      "categories": ["Computers & Tablets", "iPad & Tablet Accessories"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 40.49,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2865592_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 78,
+      "name": "Apple - Smart Cover for Apple® iPad® 2nd-, 3rd- and 4th-Generation - Dark Gray",
+      "brand": "Apple",
+      "categories": ["Computers & Tablets", "iPad & Tablet Accessories"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 39.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4020232_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 79,
+      "name": "Apple - Smart Cover for Apple® iPad® mini 4 - Gray",
+      "brand": "Apple",
+      "categories": ["Computers & Tablets", "iPad & Tablet Accessories"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 39.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4538106_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 80,
+      "name": "Apple - Smart Cover for Apple® iPad® mini 4 - Midnight Blue",
+      "brand": "Apple",
+      "categories": ["Computers & Tablets", "iPad & Tablet Accessories"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > iPad & Tablet Accessories"
+      },
+      "type": "Ipad cases",
+      "price": 39.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4538401_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 81,
+      "name": "Apple - Sport Band for Apple Watch™ 38mm - Black with Space Gray Stainless Steel Pin",
+      "brand": "Apple",
+      "categories": [
+        "Wearable Technology",
+        "Apple Watch",
+        "Apple Watch Accessories",
+        "Apple Watch Bands & Straps"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Wearable Technology",
+        "lvl1": "Wearable Technology > Apple Watch",
+        "lvl2": "Wearable Technology > Apple Watch > Apple Watch Accessories",
+        "lvl3": "Wearable Technology > Apple Watch > Apple Watch Accessories > Apple Watch Bands & Straps"
+      },
+      "type": "Apple first accy",
+      "price": 49.0,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4276208_rb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 82,
+      "name": "Apple - Sport Band for Apple Watch™ 38mm - Black with Steel Pin",
+      "brand": "Apple",
+      "categories": [
+        "Wearable Technology",
+        "Apple Watch",
+        "Apple Watch Accessories",
+        "Apple Watch Bands & Straps"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Wearable Technology",
+        "lvl1": "Wearable Technology > Apple Watch",
+        "lvl2": "Wearable Technology > Apple Watch > Apple Watch Accessories",
+        "lvl3": "Wearable Technology > Apple Watch > Apple Watch Accessories > Apple Watch Bands & Straps"
+      },
+      "type": "Apple first accy",
+      "price": 49.0,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4276209_rb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 83,
+      "name": "HP - Premium Plus Glossy Inkjet Photo Paper - White",
+      "brand": "HP",
+      "categories": ["Paper", "Photo-Quality Paper"],
+      "hierarchicalCategories": {
+        "lvl0": "Paper",
+        "lvl1": "Paper > Photo-Quality Paper"
+      },
+      "type": "Photo paper",
+      "price": 15.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4276064_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 84,
+      "name": "HP - Premium Plus Glossy Photo Paper - White",
+      "brand": "HP",
+      "categories": ["Paper", "Photo-Quality Paper"],
+      "hierarchicalCategories": {
+        "lvl0": "Paper",
+        "lvl1": "Paper > Photo-Quality Paper"
+      },
+      "type": "Photo paper",
+      "price": 16.49,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2225357_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 85,
+      "name": "HP - Premium Plus Soft Gloss Photo Paper - White",
+      "brand": "HP",
+      "categories": ["Paper", "Photo-Quality Paper"],
+      "hierarchicalCategories": {
+        "lvl0": "Paper",
+        "lvl1": "Paper > Photo-Quality Paper"
+      },
+      "type": "Photo paper",
+      "price": 17.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/3977112_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 86,
+      "name": "HP - Premium Plus Soft Glossy Inkjet Photo Paper - White",
+      "brand": "HP",
+      "categories": ["Paper", "Photo-Quality Paper"],
+      "hierarchicalCategories": {
+        "lvl0": "Paper",
+        "lvl1": "Paper > Photo-Quality Paper"
+      },
+      "type": "Photo paper",
+      "price": 17.49,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4276055_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 87,
+      "name": "HP - Prime Portable Graphing Calculator - Black/Silver",
+      "brand": "HP",
+      "categories": ["Office Electronics", "Calculators"],
+      "hierarchicalCategories": {
+        "lvl0": "Office Electronics",
+        "lvl1": "Office Electronics > Calculators"
+      },
+      "type": "Calculators",
+      "price": 149.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4222301_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 88,
+      "name": "HP - Scanjet Flatbed Photo Scanner - White",
+      "brand": "HP",
+      "categories": ["Scanners, Faxes & Copiers", "Flatbed Scanners"],
+      "hierarchicalCategories": {
+        "lvl0": "Scanners, Faxes & Copiers",
+        "lvl1": "Scanners, Faxes & Copiers > Flatbed Scanners"
+      },
+      "type": "So scanners",
+      "price": 118.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9108645_sb.jpg",
+      "rating": 4
+    },
+    {
+      "id": 89,
+      "name": "HP - Slimline Desktop - Intel Celeron - 4GB Memory - 500GB Hard Drive - Black Diamond/Gray",
+      "brand": "HP",
+      "categories": ["Computers & Tablets", "All Desktops"],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > All Desktops"
+      },
+      "type": "Cpu's",
+      "price": 279.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/4362000_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 90,
+      "name": "Kenwood - 6.5\" 2-Way Marine Speakers with Polypropylene Cones (Pair) - White",
+      "brand": "Kenwood",
+      "categories": [
+        "Car Electronics & GPS",
+        "Marine Electronics",
+        "Marine Audio",
+        "Marine Speakers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Car Electronics & GPS",
+        "lvl1": "Car Electronics & GPS > Marine Electronics",
+        "lvl2": "Car Electronics & GPS > Marine Electronics > Marine Audio",
+        "lvl3": "Car Electronics & GPS > Marine Electronics > Marine Audio > Marine Speakers"
+      },
+      "type": "Marine product",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/3583073_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 91,
+      "name": "Kenwood - 6.95\" - CD/DVD - Built-in Bluetooth - Built-in HD Radio - In-Dash Deck - Black",
+      "brand": "Kenwood",
+      "categories": [
+        "Car Electronics & GPS",
+        "Car Audio",
+        "Car Stereo Receivers",
+        "In-Dash with DVD"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Car Electronics & GPS",
+        "lvl1": "Car Electronics & GPS > Car Audio",
+        "lvl2": "Car Electronics & GPS > Car Audio > Car Stereo Receivers",
+        "lvl3": "Car Electronics & GPS > Car Audio > Car Stereo Receivers > In-Dash with DVD"
+      },
+      "type": "In dash navigation",
+      "price": 449.99,
+      "price_range": "200 - 500",
+      "image": "https://cdn-demo.algolia.com/bestbuy/3500093_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 92,
+      "name": "Kenwood - 7\" - CD/DVD - Built-In Bluetooth - Built-In HD Radio - Android Auto - Apple® CarPlay - In Dash Receiver - Black",
+      "brand": "Kenwood",
+      "categories": [
+        "Car Electronics & GPS",
+        "Car Audio",
+        "Car Stereo Receivers",
+        "In-Dash with DVD"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Car Electronics & GPS",
+        "lvl1": "Car Electronics & GPS > Car Audio",
+        "lvl2": "Car Electronics & GPS > Car Audio > Car Stereo Receivers",
+        "lvl3": "Car Electronics & GPS > Car Audio > Car Stereo Receivers > In-Dash with DVD"
+      },
+      "type": "In dash navigation",
+      "price": 699.99,
+      "price_range": "500 - 2000",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6874115_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 93,
+      "name": "Kenwood - Built-In Bluetooth - Apple® iPod®- and Satellite Radio-Ready - In-Dash Deck - Black",
+      "brand": "Kenwood",
+      "categories": [
+        "Car Electronics & GPS",
+        "Car Audio",
+        "Car Stereo Receivers",
+        "All Car Stereo Receivers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Car Electronics & GPS",
+        "lvl1": "Car Electronics & GPS > Car Audio",
+        "lvl2": "Car Electronics & GPS > Car Audio > Car Stereo Receivers",
+        "lvl3": "Car Electronics & GPS > Car Audio > Car Stereo Receivers > All Car Stereo Receivers"
+      },
+      "type": "Cd decks",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2602031_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 94,
+      "name": "Logitech - M325 Wireless Optical Mouse - Light Silver",
+      "brand": "Logitech",
+      "categories": [
+        "Computers & Tablets",
+        "Mice & Keyboards",
+        "Mice",
+        "Wireless & Bluetooth Mice"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Mice & Keyboards",
+        "lvl2": "Computers & Tablets > Mice & Keyboards > Mice",
+        "lvl3": "Computers & Tablets > Mice & Keyboards > Mice > Wireless & Bluetooth Mice"
+      },
+      "type": "Mice",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/3937934_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 95,
+      "name": "Logitech - M325 Wireless Optical Mouse - Red",
+      "brand": "Logitech",
+      "categories": [
+        "Computers & Tablets",
+        "Mice & Keyboards",
+        "Mice",
+        "Wireless & Bluetooth Mice"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Mice & Keyboards",
+        "lvl2": "Computers & Tablets > Mice & Keyboards > Mice",
+        "lvl3": "Computers & Tablets > Mice & Keyboards > Mice > Wireless & Bluetooth Mice"
+      },
+      "type": "Mice",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/3937952_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 96,
+      "name": "Logitech - M325 Wireless Optical Mouse - Silver",
+      "brand": "Logitech",
+      "categories": [
+        "Computers & Tablets",
+        "Mice & Keyboards",
+        "Mice",
+        "Wireless & Bluetooth Mice"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Mice & Keyboards",
+        "lvl2": "Computers & Tablets > Mice & Keyboards > Mice",
+        "lvl3": "Computers & Tablets > Mice & Keyboards > Mice > Wireless & Bluetooth Mice"
+      },
+      "type": "Mice",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/2577677_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 97,
+      "name": "Logitech - M325 Wireless Optical Mouse - Violet",
+      "brand": "Logitech",
+      "categories": [
+        "Computers & Tablets",
+        "Mice & Keyboards",
+        "Mice",
+        "Wireless & Bluetooth Mice"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Mice & Keyboards",
+        "lvl2": "Computers & Tablets > Mice & Keyboards > Mice",
+        "lvl3": "Computers & Tablets > Mice & Keyboards > Mice > Wireless & Bluetooth Mice"
+      },
+      "type": "Mice",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/5422358_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 98,
+      "name": "Logitech - M325c Wireless Optical Mouse - Marc Monkey",
+      "brand": "Logitech",
+      "categories": [
+        "Computers & Tablets",
+        "Mice & Keyboards",
+        "Mice",
+        "Wireless & Bluetooth Mice"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Mice & Keyboards",
+        "lvl2": "Computers & Tablets > Mice & Keyboards > Mice",
+        "lvl3": "Computers & Tablets > Mice & Keyboards > Mice > Wireless & Bluetooth Mice"
+      },
+      "type": "Mice",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/7198145_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 99,
+      "name": "Logitech - M325c Wireless Optical Mouse - Purple Fireworks",
+      "brand": "Logitech",
+      "categories": [
+        "Computers & Tablets",
+        "Mice & Keyboards",
+        "Mice",
+        "Wireless & Bluetooth Mice"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Computers & Tablets",
+        "lvl1": "Computers & Tablets > Mice & Keyboards",
+        "lvl2": "Computers & Tablets > Mice & Keyboards > Mice",
+        "lvl3": "Computers & Tablets > Mice & Keyboards > Mice > Wireless & Bluetooth Mice"
+      },
+      "type": "Mice",
+      "price": 19.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/7198136_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 100,
+      "name": "Cuisinart - Grind & Brew 12-Cup Automatic Coffeemaker - Multi",
+      "brand": "Cuisinart",
+      "categories": [
+        "Appliances",
+        "Small Kitchen Appliances",
+        "Coffee, Tea & Espresso",
+        "Coffee Makers",
+        "Coffee Makers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso",
+        "lvl3": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso > Coffee Makers"
+      },
+      "type": "Coffee/cappuccino",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9360577_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 101,
+      "name": "Cuisinart - Grind & Brew Coffee Maker - Black",
+      "brand": "Cuisinart",
+      "categories": [
+        "Appliances",
+        "Small Kitchen Appliances",
+        "Coffee, Tea & Espresso",
+        "Coffee Makers",
+        "Multi-Cup Coffee Makers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso",
+        "lvl3": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso > Coffee Makers",
+        "lvl4": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso > Coffee Makers > Multi-Cup Coffee Makers"
+      },
+      "type": "Coffee/cappuccino",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9360906_rb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 102,
+      "name": "Cuisinart - Grind Central 18-Cup Coffee Grinder - Silver",
+      "brand": "Cuisinart",
+      "categories": [
+        "Appliances",
+        "Small Kitchen Appliances",
+        "Coffee, Tea & Espresso",
+        "Coffee Grinders & Filters"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso",
+        "lvl3": "Appliances > Small Kitchen Appliances > Coffee, Tea & Espresso > Coffee Grinders & Filters"
+      },
+      "type": "Misc. housewares",
+      "price": 29.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6053192_rb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 103,
+      "name": "Cuisinart - International Chef Crepe/Pizzelle/Pancake Plus Countertop Press - Silver",
+      "brand": "Cuisinart",
+      "categories": [
+        "Appliances",
+        "Small Kitchen Appliances",
+        "Specialty Appliances",
+        "Specialty Electric Bakers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Specialty Appliances",
+        "lvl3": "Appliances > Small Kitchen Appliances > Specialty Appliances > Specialty Electric Bakers"
+      },
+      "type": "Misc. housewares",
+      "price": 99.99,
+      "price_range": "50 - 100",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8022001_rb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 104,
+      "name": "Cuisinart - Juice Extractor - Stainless-Steel",
+      "brand": "Cuisinart",
+      "categories": [
+        "Appliances",
+        "Small Kitchen Appliances",
+        "Blenders & Juicers",
+        "Juicers",
+        "Centrifugal Juicers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Blenders & Juicers",
+        "lvl3": "Appliances > Small Kitchen Appliances > Blenders & Juicers > Juicers",
+        "lvl4": "Appliances > Small Kitchen Appliances > Blenders & Juicers > Juicers > Centrifugal Juicers"
+      },
+      "type": "Juicers",
+      "price": 149.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/9760933_rb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 105,
+      "name": "Cuisinart - Metal Classic 2-Slice Toaster - Stainless-Steel",
+      "brand": "Cuisinart",
+      "categories": ["Appliances", "Small Kitchen Appliances", "Toasters"],
+      "hierarchicalCategories": {
+        "lvl0": "Appliances",
+        "lvl1": "Appliances > Small Kitchen Appliances",
+        "lvl2": "Appliances > Small Kitchen Appliances > Toasters"
+      },
+      "type": "Toasters",
+      "price": 49.99,
+      "price_range": "1 - 50",
+      "image": "https://cdn-demo.algolia.com/bestbuy/6307631_sb.jpg",
+      "rating": 3
+    },
+    {
+      "id": 106,
+      "name": "Braun - WaterFlex Solo Shaver - Blue/Black",
+      "brand": "Braun",
+      "categories": [
+        "Health, Fitness & Beauty",
+        "Personal Care & Beauty",
+        "Shavers & Trimmers",
+        "Trimmers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Health, Fitness & Beauty",
+        "lvl1": "Health, Fitness & Beauty > Personal Care & Beauty",
+        "lvl2": "Health, Fitness & Beauty > Personal Care & Beauty > Shavers & Trimmers",
+        "lvl3": "Health, Fitness & Beauty > Personal Care & Beauty > Shavers & Trimmers > Trimmers"
+      },
+      "type": "Shave & groom",
+      "price": 139.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8078137_rb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 107,
+      "name": "BRAVEN - Balance Portable Bluetooth Speaker - Lime/Gray",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 129.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/7908004_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 108,
+      "name": "BRAVEN - Balance Portable Bluetooth Speaker - Raven Black",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 129.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/7913183_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 109,
+      "name": "BRAVEN - BRV-X Outdoor Speaker - Black",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 199.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8229821_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 110,
+      "name": "BRAVEN - BRV-X Outdoor Speaker - Gray/White",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 199.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8229858_sb.jpg",
+      "rating": 2
+    },
+    {
+      "id": 111,
+      "name": "Braun - WaterFlex Solo Shaver - Blue/Black",
+      "brand": "Braun",
+      "categories": [
+        "Health, Fitness & Beauty",
+        "Personal Care & Beauty",
+        "Shavers & Trimmers",
+        "Trimmers"
+      ],
+      "hierarchicalCategories": {
+        "lvl0": "Health, Fitness & Beauty",
+        "lvl1": "Health, Fitness & Beauty > Personal Care & Beauty",
+        "lvl2": "Health, Fitness & Beauty > Personal Care & Beauty > Shavers & Trimmers",
+        "lvl3": "Health, Fitness & Beauty > Personal Care & Beauty > Shavers & Trimmers > Trimmers"
+      },
+      "type": "Shave & groom",
+      "price": 139.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8078137_rb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 112,
+      "name": "BRAVEN - Balance Portable Bluetooth Speaker - Lime/Gray",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 129.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/7908004_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 113,
+      "name": "BRAVEN - Balance Portable Bluetooth Speaker - Raven Black",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 129.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/7913183_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 114,
+      "name": "BRAVEN - BRV-X Outdoor Speaker - Black",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 199.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8229821_sb.jpg",
+      "rating": 1
+    },
+    {
+      "id": 115,
+      "name": "BRAVEN - BRV-X Outdoor Speaker - Gray/White",
+      "brand": "BRAVEN",
+      "categories": ["Audio"],
+      "hierarchicalCategories": {
+        "lvl0": "Audio"
+      },
+      "type": "Wireless speakers",
+      "price": 199.99,
+      "price_range": "100 - 200",
+      "image": "https://cdn-demo.algolia.com/bestbuy/8229858_sb.jpg",
+      "rating": 2
+    }
+  ]
+}
