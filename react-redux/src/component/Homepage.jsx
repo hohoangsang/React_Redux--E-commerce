@@ -7,6 +7,7 @@ import Loading from './content/Loading'
 
 function Homepage() {
     const [products, setProducts] = useState([])
+    const [staticProducts, setStaticProducts] = useState([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
 
@@ -17,8 +18,9 @@ function Homepage() {
             .then(
                 (result) => {
                     setProducts(result)
+                    setStaticProducts(result)
                     setLoading(false)
-                }
+                } 
             )
             .catch(
                 (error) => {
@@ -28,11 +30,30 @@ function Homepage() {
         console.log(products);
     }
 
+    useEffect(() => {
+        setLoading(true);
+        fetch(`http://localhost:3000/products`)
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setLoading(false)
+                    setProducts(result)
+                }
+            )
+            .catch(
+                () => {        
+                    setError("No results found matching.")
+                }
+            )
+    }, [])
+
     return (
         <React.Fragment>
             <Header searchProducts = {searchProducts}/>
             <main className = "main-content">
-                <Sidebar />
+                <Sidebar 
+                    staticProducts = {staticProducts}
+                />
                 {loading 
                     ? <Loading /> 
                     : <Article
