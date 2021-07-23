@@ -2,11 +2,21 @@ import React, { useState } from 'react'
 
 function Categories(props) {
     const {
-        staticProducts
+        staticProducts,
+        checked,
+        renderProductByCategories,
+        resetFilter
     } = props
 
     const [activeCategories, setActiveCategories] = useState(null)
     const [activeSubCategories, setActiveSubCategories] = useState(null)
+
+    const handleClickCategories = (name) => {
+        setActiveCategories(name);
+        const payload = "hierarchicalCategories.lvl0"
+        console.log(activeCategories)
+        renderProductByCategories(name, payload)
+    }
 
     const getCategoriesData = () => {
         let categoriesData = {};
@@ -26,9 +36,6 @@ function Categories(props) {
         return categoriesData
     }
 
-    const array = getCategoriesData()
-    console.log(array);
-
     const renderCategories = () => {
         const categoriesData = getCategoriesData();  
         let categoriesView = Object.keys(categoriesData).map((key, index) => {
@@ -36,12 +43,13 @@ function Categories(props) {
                 <li
                     className={`hierarchical-menu--item ${categoriesData[key].name === activeCategories && "hierarchical-menu--item__active"}`}
                     key={key}
+                    onClick = {() => handleClickCategories(categoriesData[key].name)}
                 >
                     <span className = "title--lv0">
                         <i className="fa fa-angle-right"></i> {categoriesData[key].name}
                     </span>
                     {Object.keys(categoriesData[key].child).length > 0 && (
-                        <ul className="hierarchical-menu--list__lvl1">
+                        <ul className="hierarchical-menu--list__lvl1" style = {{display: (categoriesData[key].name = activeCategories && checked) ? "block" : "none"}}>
                             {Object.keys(categoriesData[key].child).map((childKey, childIndex) => {
                                 return (
                                     <li
@@ -65,8 +73,8 @@ function Categories(props) {
 
     return (
         <div className="filter__category">
-            <div className="clear-filter-btn">
-                <button><i className="fas fa-eraser"></i> Clear all filter</button>
+            <div className="clear-filter-btn" style = {{display: checked ? "block" : "none"}}>
+                <button onclick = {resetFilter}><i className="fas fa-eraser"></i> Clear all filter</button>
             </div>
             <div>
                 <h2 className="categories__title">Show result for</h2>

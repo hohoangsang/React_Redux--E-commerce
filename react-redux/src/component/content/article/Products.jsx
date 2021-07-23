@@ -5,8 +5,6 @@ function Products(props) {
         products
     } = props
 
-    console.log(products);
-
     return (
         <div className="products">
             {products.map((product) => {
