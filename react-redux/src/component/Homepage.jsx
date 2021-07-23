@@ -10,6 +10,7 @@ function Homepage() {
     const [staticProducts, setStaticProducts] = useState([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
+    const [checked, setChecked] = useState(false);
 
     const searchProducts = async (text) => {
         setLoading(true);
@@ -18,7 +19,6 @@ function Homepage() {
             .then(
                 (result) => {
                     setProducts(result)
-                    setStaticProducts(result)
                     setLoading(false)
                 } 
             )
@@ -30,6 +30,14 @@ function Homepage() {
         console.log(products);
     }
 
+    const renderProductByCategories = (name, payload) => {
+        setChecked(true)
+    }
+
+    const resetFilter = () => {
+        setChecked(false)
+    }
+
     useEffect(() => {
         setLoading(true);
         fetch(`http://localhost:3000/products`)
@@ -38,6 +46,7 @@ function Homepage() {
                 (result) => {
                     setLoading(false)
                     setProducts(result)
+                    setStaticProducts(result)
                 }
             )
             .catch(
@@ -53,6 +62,10 @@ function Homepage() {
             <main className = "main-content">
                 <Sidebar 
                     staticProducts = {staticProducts}
+                    products = {products}
+                    checked = {checked}
+                    renderProductByCategories = {renderProductByCategories}
+                    resetFilter = {resetFilter}
                 />
                 {loading 
                     ? <Loading /> 
