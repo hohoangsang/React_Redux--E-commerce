@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function Categories(props) {
     const {
@@ -10,11 +10,26 @@ function Categories(props) {
 
     const [activeCategories, setActiveCategories] = useState(null)
     const [activeSubCategories, setActiveSubCategories] = useState(null)
+    const [isReset, setIsReset] = useState(true)
+
+    useEffect(() => {
+        if(!checked){
+            setActiveCategories(null);
+            setActiveSubCategories(null);
+        }
+    }, [checked])
 
     const handleClickCategories = (name) => {
         setActiveCategories(name);
         const payload = "hierarchicalCategories.lvl0"
-        console.log(activeCategories)
+        renderProductByCategories(name, payload)
+    }
+
+    const handleClickSubCategories = (event, child) => {
+        event.stopPropagation();
+        setActiveSubCategories(child);
+        const payload = "hierarchicalCategories.lvl1";
+        const name = `${activeCategories} > ${child}`;
         renderProductByCategories(name, payload)
     }
 
@@ -49,12 +64,13 @@ function Categories(props) {
                         <i className="fa fa-angle-right"></i> {categoriesData[key].name}
                     </span>
                     {Object.keys(categoriesData[key].child).length > 0 && (
-                        <ul className="hierarchical-menu--list__lvl1" style = {{display: (categoriesData[key].name = activeCategories && checked) ? "block" : "none"}}>
+                        <ul className="hierarchical-menu--list__lvl1" style = {{display: (categoriesData[key].name === activeCategories && checked) ? "block" : "none"}}>
                             {Object.keys(categoriesData[key].child).map((childKey, childIndex) => {
                                 return (
                                     <li
                                         className={`hierarchical-menu--item ${categoriesData[key].child[childKey] === activeSubCategories && "hierarchical-menu--item__active"}`}
                                         key = {childKey}
+                                        onClick = {(event) => handleClickSubCategories(event, categoriesData[key].child[childKey])}
                                     >
                                         <span  className = "title--lv1">
                                             <i className="fa fa-angle-right"></i> {categoriesData[key].child[childKey]}
@@ -74,7 +90,7 @@ function Categories(props) {
     return (
         <div className="filter__category">
             <div className="clear-filter-btn" style = {{display: checked ? "block" : "none"}}>
-                <button onclick = {resetFilter}><i className="fas fa-eraser"></i> Clear all filter</button>
+                <button onClick = {() => resetFilter()}><i className="fas fa-eraser"></i> Clear all filter</button>
             </div>
             <div>
                 <h2 className="categories__title">Show result for</h2>
