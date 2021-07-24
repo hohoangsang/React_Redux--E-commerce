@@ -11,7 +11,9 @@ function Sidebar(props) {
         products,
         checked,
         renderProductByCategories,
-        resetFilter
+        resetFilter,
+        filterType,
+        filterBrand
     } = props
 
     return (
@@ -27,10 +29,12 @@ function Sidebar(props) {
                 <Type 
                     staticProducts = {staticProducts}
                     checked = {checked}
+                    filterType = {filterType}
                 />
                 <Brand 
                     staticProducts = {staticProducts}
                     checked = {checked}
+                    filterBrand = {filterBrand}
                 />
                 <Rating 
                     products = {products}

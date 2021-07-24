@@ -1,15 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function Brand(props) {
     const {
         staticProducts,
-        checked
+        checked,
+        filterBrand
     } = props
 
     const [checkedBrand, setCheckedBrand] = useState([]);
     const [values, setValues] = useState("");
+    const [isChange, setIsChange] = useState(false);
 
-    let listBrand = staticProducts.map(item => item.type);
+    useEffect(() => {
+        if(!checked){
+            setCheckedBrand([])
+        }
+        return setIsChange(false)
+    }, [checked, isChange])
+
+    let listBrand = staticProducts.map(item => item.brand);
     listBrand = [...new Set(listBrand)].sort();
 
     const setUpCheckedBrand = (values) => {
@@ -21,22 +30,27 @@ function Brand(props) {
             newArray.push(values);
         }
 
-        setCheckedBrand(newArray);
+        console.log(newArray)
+        return setCheckedBrand(newArray);
     }
 
 
     const handleChange = (name) => {
-        const brand = "brand"
+        setIsChange(true)
         setUpCheckedBrand(name)
-        // renderBrand(checkedBrand, brand);
+        filterBrand(checkedBrand, "brand");
     }
 
-    const handleSubmit = () => {
-
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setUpCheckedBrand(values);
+        filterBrand(checkedBrand, "brand");
+        setValues("");
     }
 
-    const handleChangeValues = () => {
-
+    const handleChangeValues = (event) => {
+        setValues(event.target.value);
+        console.log(values);
     }
 
     return (
@@ -66,7 +80,7 @@ function Brand(props) {
                                                 type="checkbox"
                                                 name={item}
                                                 value={item}
-                                                checked={!checked ? false : checkedBrand.includes(item)}
+                                                checked={checkedBrand.includes(item)}
                                                 onChange={() => handleChange(item)}
                                                 className="brand-item--input" />
                                             <span className="item--name">{item}</span>

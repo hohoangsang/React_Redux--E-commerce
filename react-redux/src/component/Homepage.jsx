@@ -27,15 +27,49 @@ function Homepage() {
                     setError(error)
                 }       
             )
-        console.log(products);
     }
 
-    const renderProductByCategories = (name, payload) => {
-        setChecked(true)
+    const filterProducts = (array, option) => {
+        if(array.length > 0){
+            let productFilter = staticProducts.filter(item => {
+                switch (option){
+                    case "type":
+                        return array.includes(item.type);
+                        break;
+                    case "brand":
+                        return array.includes(item.brand);
+                        break;
+                    default:
+                }
+            })
+            setChecked(true);
+            setProducts(productFilter);
+        } else {
+            setProducts(staticProducts)
+        }
+    }
+
+    const renderProductByCategories = async (name, payload) => {
+        setChecked(true);
+        setLoading(true);
+        await fetch(`http://localhost:3000/products?${payload}_like=${name}`)
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setProducts(result);
+                    setLoading(false)
+                }
+            )
+            .catch(
+                (error) => {
+                    setError(error)
+                }       
+            )
     }
 
     const resetFilter = () => {
         setChecked(false)
+        setProducts(staticProducts)
     }
 
     useEffect(() => {
@@ -66,6 +100,8 @@ function Homepage() {
                     checked = {checked}
                     renderProductByCategories = {renderProductByCategories}
                     resetFilter = {resetFilter}
+                    filterType = {filterProducts}
+                    filterBrand = {filterProducts}
                 />
                 {loading 
                     ? <Loading /> 
