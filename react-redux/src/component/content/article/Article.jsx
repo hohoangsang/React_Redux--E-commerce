@@ -6,6 +6,8 @@ import Sort from './Sort'
 function Article(props) {
     const {
         products,
+        staticProducts,
+        handleOnClickPageBtn
     } = props;
 
     const [isChange, setIsChange] = useState(false)
@@ -36,7 +38,11 @@ function Article(props) {
             <Sort handleSortProducts = {handleSortProducts}/>
             <Products products = {products}/>
             <div className = "pagination">
-                <Pagination products = {products}/>
+                <Pagination 
+                    products = {products}
+                    staticProducts = {staticProducts}
+                    handleOnClickPageBtn = {handleOnClickPageBtn}  
+                />
             </div>
         </article>
     )

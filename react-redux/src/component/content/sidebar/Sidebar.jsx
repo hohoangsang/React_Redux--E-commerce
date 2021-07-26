@@ -13,7 +13,9 @@ function Sidebar(props) {
         renderProductByCategories,
         resetFilter,
         filterType,
-        filterBrand
+        filterBrand,
+        handleClickPrice,
+        handleSubmitPrices
     } = props
 
     return (
@@ -43,6 +45,8 @@ function Sidebar(props) {
                 <Prices 
                     products = {products}
                     checked = {checked}
+                    handleClickPrice = {handleClickPrice}
+                    handleSubmitPrices = {handleSubmitPrices}
                 />
             </div>
         </div>

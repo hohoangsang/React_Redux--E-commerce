@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { getListFilter } from '../../../util';
 
 function Brand(props) {
     const {
@@ -11,6 +12,8 @@ function Brand(props) {
     const [values, setValues] = useState("");
     const [isChange, setIsChange] = useState(false);
 
+    const listBrand = getListFilter(staticProducts, "brand")
+
     useEffect(() => {
         if(!checked){
             setCheckedBrand([])
@@ -18,8 +21,6 @@ function Brand(props) {
         return setIsChange(false)
     }, [checked, isChange])
 
-    let listBrand = staticProducts.map(item => item.brand);
-    listBrand = [...new Set(listBrand)].sort();
 
     const setUpCheckedBrand = (values) => {
         let newArray = checkedBrand;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { getListFilter } from '../../../util';
 
 function Type(props) {
     const {
@@ -10,8 +11,7 @@ function Type(props) {
     const [checkedType, setCheckedType] = useState([])
     const [isChange, setIsChange] = useState(false)
 
-    let productsType = staticProducts.map(item => item.type);
-    productsType = [...new Set(productsType)].sort();
+    const listType = getListFilter(staticProducts, "type")
 
     useEffect(() => {
         if (!checked) {
@@ -41,7 +41,7 @@ function Type(props) {
                 <nav>
                     <ul>
                         {
-                            productsType.map((item) => {
+                            listType.map((item) => {
                                 return (
                                     <li>
                                         <label className="type-item--label">

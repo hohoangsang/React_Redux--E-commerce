@@ -1,13 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function Prices(props) {
     const {
         products,
         checked,
+        handleClickPrice,
+        handleSubmitPrices
     } = props
 
-    const [firstNumber, setFirstNumber] = useState("");
-    const [lastNumber, setLastNumber] = useState("");
+    const [inputs, setInputs] = useState({
+        firstNumber: "",
+        lastNumber: "",
+    })
+
+    useEffect(() => {
+        if(!checked){
+            setInputs({
+                firstNumber: "",
+                lastNumber: "",
+            })
+        }
+    }, [checked])
 
     let pricesRange = products.map(item => {
         return item.price_range
@@ -30,13 +43,21 @@ function Prices(props) {
     }
 
     const handleChangePrice = (event) => {
-        // this.setState({
-        //     [event.target.name]: event.target.value
-        // })
+        setInputs({
+            ...inputs,
+            [event.target.name]: event.target.value.trim()
+        })
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        handleSubmitPrices(inputs.firstNumber, inputs.lastNumber)
+        if (checked){
+            setInputs({
+                firstNumber: '',
+                lastNumber: ''
+            })
+        }
     }
 
 
@@ -48,8 +69,8 @@ function Prices(props) {
                     <ul>
                         {pricesRange.map(item => {
                             return (item.indexOf("-") == -1
-                                ? <li>{item}</li>
-                                : <li>$ {item}</li>)
+                                ? <li onClick = {() => handleClickPrice(item)}>{item}</li>
+                                : <li onClick = {() => handleClickPrice(item)}>$ {item}</li>)
                         })}
                     </ul>
                 </nav>
@@ -60,7 +81,8 @@ function Prices(props) {
                             type="number"
                             className="price-ranges--input"
                             name="firstNumber"
-                            // onChange={handleChangePrice}
+                            value = {inputs.firstNumber}
+                            onChange={handleChangePrice}
                             // value={this.state.firstNumber} 
                         />
                     </label>
@@ -71,7 +93,8 @@ function Prices(props) {
                             type="number"
                             className="price-ranges--input"
                             name="lastNumber"
-                            // onChange={handleChangePrice}
+                            value = {inputs.lastNumber}
+                            onChange={handleChangePrice}
                             // value={this.state.lastNumber} 
                         />
                     </label>
