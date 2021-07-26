@@ -12,6 +12,24 @@ function Homepage() {
     const [error, setError] = useState(null)
     const [checked, setChecked] = useState(false);
 
+    useEffect(() => {
+        setLoading(true);
+        fetch(`http://localhost:3000/products`)
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setLoading(false)
+                    setProducts(result)
+                    setStaticProducts(result)
+                }
+            )
+            .catch(
+                () => {        
+                    setError("No results found matching.")
+                }
+            )
+    }, [])
+
     const searchProducts = async (text) => {
         setLoading(true);
         await fetch(`http://localhost:3000/products?q=${text}`)
@@ -72,23 +90,31 @@ function Homepage() {
         setProducts(staticProducts)
     }
 
-    useEffect(() => {
-        setLoading(true);
-        fetch(`http://localhost:3000/products`)
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    setLoading(false)
-                    setProducts(result)
-                    setStaticProducts(result)
-                }
+    const handleClickPrice = (price) => {
+        const filterPrices = products.filter(item => item.price_range === price);
+        setProducts(filterPrices);
+        setChecked(true);
+    }
+
+    const handleSubmitPrices = (first, last) => {
+        if(first === '' && last === ''){
+            return (setProducts(staticProducts),
+                    setChecked(true)
             )
-            .catch(
-                () => {        
-                    setError("No results found matching.")
-                }
+        } else {
+            const filterPrices = staticProducts.filter(item => {
+                return ((item.price >= first) && (item.price <= last))
+            })
+            return (
+                setProducts(filterPrices),
+                setChecked(true)
             )
-    }, [])
+        }
+    }
+
+    const handleOnClickPageBtn = () => {
+
+    }
 
     return (
         <React.Fragment>
@@ -102,11 +128,15 @@ function Homepage() {
                     resetFilter = {resetFilter}
                     filterType = {filterProducts}
                     filterBrand = {filterProducts}
+                    handleClickPrice ={handleClickPrice}
+                    handleSubmitPrices = {handleSubmitPrices}
                 />
                 {loading 
                     ? <Loading /> 
                     : <Article
                         products = {products}
+                        staticProducts = {staticProducts}
+                        handleOnClickPageBtn = {handleOnClickPageBtn}
                     />}
             </main>
         </React.Fragment>
