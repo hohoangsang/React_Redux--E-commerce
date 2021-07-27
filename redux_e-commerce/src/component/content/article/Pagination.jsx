@@ -13,7 +13,7 @@ function Pagination(props) {
         let btns = []
         for(let i = 1; i <= length; i++){
             let btn = (
-                <li className = {"page-item"} key={i} onClick = {() => handleOnClickPageBtn()}>
+                <li className = {"page-item"} key={i} onClick = {() => handleOnClickPageBtn(i)}>
                     {i}
                 </li>
             )

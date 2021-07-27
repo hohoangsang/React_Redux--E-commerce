@@ -3,6 +3,7 @@ import Article from './content/article/Article'
 import Sidebar from './content/sidebar/Sidebar'
 import Header from './header/Header'
 import Loading from './content/Loading'
+import { getListFilter } from '../util'
 
 
 function Homepage() {
@@ -11,6 +12,12 @@ function Homepage() {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
     const [checked, setChecked] = useState(false);
+    const [filter, setFilter] = useState({
+        _page: 1,
+        _limit: 16,
+        q:""
+    })
+    const [isChange , setIsChange] = useState(false)
 
     useEffect(() => {
         setLoading(true);
@@ -28,11 +35,19 @@ function Homepage() {
                     setError("No results found matching.")
                 }
             )
-    }, [])
+        return setIsChange(false)
+    }, [isChange])
 
     const searchProducts = async (text) => {
+        setIsChange(true)
         setLoading(true);
-        await fetch(`http://localhost:3000/products?q=${text}`)
+        setFilter({
+            ...filter,
+            q: text
+        })
+        console.log(filter)
+        const url=`http://localhost:3000/products?q=${text}`
+        await fetch(url)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -112,8 +127,21 @@ function Homepage() {
         }
     }
 
-    const handleOnClickPageBtn = () => {
-
+    const handleOnClickPageBtn = async (page) => {
+        setLoading(true)
+        await fetch(`http://localhost:3000/products?_page=${page}&_limit=16`)
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setProducts(result)
+                    setLoading(false)
+                }
+            )
+            .catch(
+                (error) => {
+                    setError(error)
+                }
+            )
     }
 
     return (
