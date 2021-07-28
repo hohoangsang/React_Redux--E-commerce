@@ -67,10 +67,10 @@ function Prices(props) {
             <div className="filter__categories__prices">
                 <nav>
                     <ul>
-                        {pricesRange.map(item => {
+                        {pricesRange.map((item, key) => {
                             return (item.indexOf("-") == -1
-                                ? <li onClick = {() => handleClickPrice(item)}>{item}</li>
-                                : <li onClick = {() => handleClickPrice(item)}>$ {item}</li>)
+                                ? <li key = {key} onClick = {() => handleClickPrice(item)}>{item}</li>
+                                : <li key = {key} onClick = {() => handleClickPrice(item)}>$ {item}</li>)
                         })}
                     </ul>
                 </nav>

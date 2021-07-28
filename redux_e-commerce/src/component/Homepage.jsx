@@ -3,7 +3,7 @@ import Article from './content/article/Article'
 import Sidebar from './content/sidebar/Sidebar'
 import Header from './header/Header'
 import Loading from './content/Loading'
-import { getListFilter } from '../util'
+import productsApi from '../api/productsApi'
 
 
 function Homepage() {
@@ -17,29 +17,24 @@ function Homepage() {
         _limit: 16,
         q:""
     })
-    const [isChange , setIsChange] = useState(false)
 
     useEffect(() => {
-        setLoading(true);
-        fetch(`http://localhost:3000/products`)
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    setLoading(false)
-                    setProducts(result)
-                    setStaticProducts(result)
-                }
-            )
-            .catch(
-                () => {        
-                    setError("No results found matching.")
-                }
-            )
-        return setIsChange(false)
-    }, [isChange])
+        setLoading(true)
+        const getProductsFromApi = async () => {
+            try {
+                const response = await productsApi.getAll();
+                setProducts(response);
+                setStaticProducts(response);
+                setLoading(false);
+            } catch (error) {   
+                console.log("Failed to get products from API", error)
+            }
+        }
+
+        getProductsFromApi()
+    }, [])
 
     const searchProducts = async (text) => {
-        setIsChange(true)
         setLoading(true);
         setFilter({
             ...filter,

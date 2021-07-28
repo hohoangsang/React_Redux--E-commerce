@@ -41,9 +41,9 @@ function Type(props) {
                 <nav>
                     <ul>
                         {
-                            listType.map((item) => {
+                            listType.map((item, key) => {
                                 return (
-                                    <li>
+                                    <li key = {key}>
                                         <label className="type-item--label">
                                             <input
                                                 type="checkbox"

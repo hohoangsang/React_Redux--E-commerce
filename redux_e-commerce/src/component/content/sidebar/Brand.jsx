@@ -73,9 +73,9 @@ function Brand(props) {
                 <nav>
                     <ul>
                         {
-                            listBrand.map(item => {
+                            listBrand.map((item, key) => {
                                 return (
-                                    <li>
+                                    <li key = {key}>
                                         <label className="brand-item--label">
                                             <input
                                                 type="checkbox"
