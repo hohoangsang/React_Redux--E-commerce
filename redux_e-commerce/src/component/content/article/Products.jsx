@@ -7,9 +7,9 @@ function Products(props) {
 
     return (
         <div className="products">
-            {products.map((product) => {
+            {products.map((product, key) => {
                 return (
-                    <div key={product.id} className="products-item">
+                    <div key = {key} className="products-item">
                         <div className="products-item__img">
                             <img src={product.image} alt="product image" />
                         </div>

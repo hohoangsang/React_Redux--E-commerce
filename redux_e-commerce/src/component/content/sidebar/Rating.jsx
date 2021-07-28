@@ -13,10 +13,10 @@ function Rating(props) {
             <h4 className="filter__categories__item-title">Rating</h4>
             <div className="filter__categories__rating">
                 <nav>
-                    <ul>
-                        {ratingArr.map((item, index) => {
+                    <ul>    
+                        {ratingArr.map((item, key) => {
                             return (
-                                <li>
+                                <li key = {key}>
                                     {[...Array(item)].map(() => {
                                         return <span className="fa fa-star checked star-item"></span>
                                     })}
