@@ -1,41 +1,36 @@
 import React, { useState, useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import {filterCategories, filterSubCategories, filterClear } from '../../../redux/action/FilterAction'
 
-function Categories(props) {
-    const {
-        staticProducts,
-        checked,
-        renderProductByCategories,
-        resetFilter
-    } = props
-
+function Categories() {
     const [activeCategories, setActiveCategories] = useState(null)
     const [activeSubCategories, setActiveSubCategories] = useState(null)
-    const [isReset, setIsReset] = useState(true)
+    const allProducts = useSelector(state => state.products.allData)
+    const dispatch = useDispatch()
 
-    useEffect(() => {
-        if(!checked){
-            setActiveCategories(null);
-            setActiveSubCategories(null);
-        }
-    }, [checked])
-
-    const handleClickCategories = (name) => {
-        setActiveCategories(name);
-        const payload = "hierarchicalCategories.lvl0"
-        renderProductByCategories(name, payload)
+    const resetFilter = () => {
+        setActiveSubCategories(null)
+        setActiveCategories(null)
+        dispatch(filterClear())
     }
 
-    const handleClickSubCategories = (event, child) => {
+    const handleClickCategories = (name) => {
+        setActiveSubCategories(null)
+        setActiveCategories(name);
+        dispatch(filterCategories(name))
+    }
+
+    const handleClickSubCategories = (event, name, child) => {
         event.stopPropagation();
+        setActiveCategories(name)
         setActiveSubCategories(child);
-        const payload = "hierarchicalCategories.lvl1";
-        const name = `${activeCategories} > ${child}`;
-        renderProductByCategories(name, payload)
+        dispatch(filterCategories(name))
+        dispatch(filterSubCategories(`${name} > ${child}`))
     }
 
     const getCategoriesData = () => {
         let categoriesData = {};
-        for (let item of staticProducts) {
+        for (let item of allProducts) {
             if (!categoriesData[item.hierarchicalCategories.lvl0]) {
                 categoriesData[item.hierarchicalCategories.lvl0] = {
                     name: item.hierarchicalCategories.lvl0,
@@ -64,13 +59,13 @@ function Categories(props) {
                         <i className="fa fa-angle-right"></i> {categoriesData[key].name}
                     </span>
                     {Object.keys(categoriesData[key].child).length > 0 && (
-                        <ul className="hierarchical-menu--list__lvl1" style = {{display: (categoriesData[key].name === activeCategories && checked) ? "block" : "none"}}>
+                        <ul className="hierarchical-menu--list__lvl1" style = {{display: (categoriesData[key].name === activeCategories) ? "block" : "none"}}>
                             {Object.keys(categoriesData[key].child).map((childKey, childIndex) => {
                                 return (
                                     <li
                                         className={`hierarchical-menu--item ${categoriesData[key].child[childKey] === activeSubCategories && "hierarchical-menu--item__active"}`}
                                         key = {childKey}
-                                        onClick = {(event) => handleClickSubCategories(event, categoriesData[key].child[childKey])}
+                                        onClick = {(event) => handleClickSubCategories(event, categoriesData[key].name, categoriesData[key].child[childKey])}
                                     >
                                         <span  className = "title--lv1">
                                             <i className="fa fa-angle-right"></i> {categoriesData[key].child[childKey]}
@@ -89,7 +84,7 @@ function Categories(props) {
 
     return (
         <div className="filter__category">
-            <div className="clear-filter-btn" style = {{display: checked ? "block" : "none"}}>
+            <div className="clear-filter-btn">
                 <button onClick = {() => resetFilter()}><i className="fas fa-eraser"></i> Clear all filter</button>
             </div>
             <div>

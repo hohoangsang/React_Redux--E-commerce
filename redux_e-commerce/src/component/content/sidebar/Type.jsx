@@ -1,38 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { getListFilter } from '../../../util';
+import { useSelector, useDispatch } from 'react-redux'
+import { filterType } from '../../../redux/action/FilterAction'
 
-function Type(props) {
-    const {
-        staticProducts,
-        checked,
-        filterType
-    } = props
+function Type() {
+    const checkedType = useSelector(state => state.filter.type)
+    const allData = useSelector(state => state.products.allData)
+    const dispatch = useDispatch()
 
-    const [checkedType, setCheckedType] = useState([])
-    const [isChange, setIsChange] = useState(false)
+    console.log(checkedType)
 
-    const listType = getListFilter(staticProducts, "type")
-
-    useEffect(() => {
-        if (!checked) {
-            setCheckedType([])
-        }
-        return setIsChange(false)
-    }, [checked, isChange])
-
-    const handleChange = (name) => {
-        setIsChange(true)
-        let arrayType = checkedType;
-        let find = arrayType.indexOf(name);
-        if (find > -1) {
-            arrayType.splice(find, 1);
-        } else {
-            arrayType.push(name);
-        }
-
-        setCheckedType(arrayType)
-        filterType(checkedType, "type")
+    const handleChange = (item) => {
+        dispatch(filterType(item))
     }
+
+    const listType = getListFilter(allData, "type")
 
     return (
         <div className="filter__categories__item">
@@ -50,11 +32,11 @@ function Type(props) {
                                                 name={item}
                                                 value={item}
                                                 onChange={() => handleChange(item)}
-                                                checked={checkedType.includes(item)}
+                                                checked = {checkedType.includes(item)}
                                                 className="type-item--input" 
                                             />
                                             <span className="item-name">{item}</span>
-                                            <span className="item-count">({staticProducts.filter(product => product.type === item).length})</span>
+                                            <span className="item-count">({allData.filter(product => product.type === item).length})</span>
                                         </label>
                                     </li>
                                 )

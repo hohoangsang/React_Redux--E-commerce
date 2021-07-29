@@ -1,13 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-function Products(props) {
-    const {
-        products
-    } = props
+function Products() {
+    const { filterData } = useSelector(state => state.products);
 
     return (
         <div className="products">
-            {products.map((product, key) => {
+            {filterData.map((product, key) => {
                 return (
                     <div key = {key} className="products-item">
                         <div className="products-item__img">

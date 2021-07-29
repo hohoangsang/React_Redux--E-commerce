@@ -50,10 +50,10 @@ const FilterReducer = (state = initialState, action) => {
 
         case FILTER_TYPE: {
             let newState = {...state};
-            let arrayType = [...newState.type];
+            let arrayType = newState.type;
             let find = arrayType.indexOf(action.payload)
             if(find > -1){
-                arrayType.splice(action.payload, 1)
+                arrayType.splice(find, 1)
             } else {
                 arrayType.push(action.payload)
             }
@@ -64,12 +64,12 @@ const FilterReducer = (state = initialState, action) => {
             }
         }
 
-        case FILTER_BRAND, FILTER_SEARCH_BRAND: {
+        case FILTER_BRAND: {
             let newState = {...state}
-            let arrayBrand = [...newState.brand]
+            let arrayBrand = newState.brand
             let find = arrayBrand.indexOf(action.payload)
             if (find > -1){
-                arrayBrand.splice(action.payload, 1)
+                arrayBrand.splice(find, 1)
             } else {
                 arrayBrand.push(action.payload)
             }
