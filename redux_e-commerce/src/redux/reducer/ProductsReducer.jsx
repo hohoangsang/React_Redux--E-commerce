@@ -13,7 +13,6 @@ const initialState = {
     filterData: [],
     loading: false,
     error: null,
-    total: 0
 }
 
 const ProductsReducer = (state = initialState, action) => {
@@ -24,7 +23,6 @@ const ProductsReducer = (state = initialState, action) => {
                 allData: [],
                 loading: true,
                 error: null,
-                total: 0
             }
         }
 
@@ -34,7 +32,6 @@ const ProductsReducer = (state = initialState, action) => {
                 allData: action.payload,
                 loading: false,
                 error: null,
-                total: action.payload.total
             }
         }
 
@@ -43,7 +40,6 @@ const ProductsReducer = (state = initialState, action) => {
                 ...state,
                 error: action.payload,
                 loading: false,
-                total: 0
             }
         }
 
@@ -53,7 +49,6 @@ const ProductsReducer = (state = initialState, action) => {
                 filterData: [],
                 loading: true,
                 error: null,
-                total: 0
             }
         }
 
@@ -63,7 +58,6 @@ const ProductsReducer = (state = initialState, action) => {
                 filterData: action.payload,
                 loading: false,
                 error: null,
-                total: action.payload.total
             }
         }
 
@@ -72,8 +66,7 @@ const ProductsReducer = (state = initialState, action) => {
                 ...state,
                 filterData: [],
                 loading: false,
-                error: action.payload,
-                total: 0
+                error: action.payload
             }
         }
 

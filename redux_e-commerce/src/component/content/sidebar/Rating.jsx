@@ -1,12 +1,9 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-function Rating(props) {
-    const {
-        products,
-        checked
-    } = props
-
+function Rating() {
     const ratingArr = [4, 3, 2, 1]
+    const {allData} = useSelector(state => state.products)
 
     return (
         <div className="filter__categories__item">
@@ -23,7 +20,7 @@ function Rating(props) {
                                     {[...Array((5 - item))].map(() => {
                                         return <span className="fa fa-star unchecked star-item"></span>
                                     })}
-                                    <span className="star-rating-count"> &amp; Up {products.filter(product => product.rating == item).length}</span>
+                                    <span className="star-rating-count"> &amp; Up {allData.filter(product => product.rating == item).length}</span>
                                 </li>
                             )
                         })}

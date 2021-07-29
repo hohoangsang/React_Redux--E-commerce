@@ -3,43 +3,33 @@ import Article from './content/article/Article'
 import Sidebar from './content/sidebar/Sidebar'
 import Header from './header/Header'
 import Loading from './content/Loading'
-import productsApi from '../api/productsApi'
+
+import { useSelector, useDispatch } from 'react-redux'
+import {
+    getAllProductsRequest,
+    getFilterProductsRequest
+} from '../redux/action/ProductsAction'
 
 
 function Homepage() {
     const [products, setProducts] = useState([])
     const [staticProducts, setStaticProducts] = useState([])
-    const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
     const [checked, setChecked] = useState(false);
-    const [filter, setFilter] = useState({
-        _page: 1,
-        _limit: 16,
-        q:""
-    })
+
+    const dispatch = useDispatch()
+    const filter = useSelector(state => state.filter)
+    const loading = useSelector(state => state.products.loading)
 
     useEffect(() => {
-        setLoading(true)
-        const getProductsFromApi = async () => {
-            try {
-                const response = await productsApi.getAll();
-                setProducts(response);
-                setStaticProducts(response);
-                setLoading(false);
-            } catch (error) {   
-                console.log("Failed to get products from API", error)
-            }
-        }
+        dispatch(getAllProductsRequest())
+    }, [dispatch])
 
-        getProductsFromApi()
-    }, [])
+    useEffect(() => {
+        dispatch(getFilterProductsRequest())   
+    }, [dispatch, filter])
 
     const searchProducts = async (text) => {
-        setLoading(true);
-        setFilter({
-            ...filter,
-            q: text
-        })
         console.log(filter)
         const url=`http://localhost:3000/products?q=${text}`
         await fetch(url)
@@ -47,7 +37,6 @@ function Homepage() {
             .then(
                 (result) => {
                     setProducts(result)
-                    setLoading(false)
                 } 
             )
             .catch(
@@ -55,49 +44,6 @@ function Homepage() {
                     setError(error)
                 }       
             )
-    }
-
-    const filterProducts = (array, option) => {
-        if(array.length > 0){
-            let productFilter = staticProducts.filter(item => {
-                switch (option){
-                    case "type":
-                        return array.includes(item.type);
-                        break;
-                    case "brand":
-                        return array.includes(item.brand);
-                        break;
-                    default:
-                }
-            })
-            setChecked(true);
-            setProducts(productFilter);
-        } else {
-            setProducts(staticProducts)
-        }
-    }
-
-    const renderProductByCategories = async (name, payload) => {
-        setChecked(true);
-        setLoading(true);
-        await fetch(`http://localhost:3000/products?${payload}_like=${name}`)
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    setProducts(result);
-                    setLoading(false)
-                }
-            )
-            .catch(
-                (error) => {
-                    setError(error)
-                }       
-            )
-    }
-
-    const resetFilter = () => {
-        setChecked(false)
-        setProducts(staticProducts)
     }
 
     const handleClickPrice = (price) => {
@@ -123,13 +69,11 @@ function Homepage() {
     }
 
     const handleOnClickPageBtn = async (page) => {
-        setLoading(true)
         await fetch(`http://localhost:3000/products?_page=${page}&_limit=16`)
             .then(res => res.json())
             .then(
                 (result) => {
                     setProducts(result)
-                    setLoading(false)
                 }
             )
             .catch(
@@ -147,10 +91,6 @@ function Homepage() {
                     staticProducts = {staticProducts}
                     products = {products}
                     checked = {checked}
-                    renderProductByCategories = {renderProductByCategories}
-                    resetFilter = {resetFilter}
-                    filterType = {filterProducts}
-                    filterBrand = {filterProducts}
                     handleClickPrice ={handleClickPrice}
                     handleSubmitPrices = {handleSubmitPrices}
                 />

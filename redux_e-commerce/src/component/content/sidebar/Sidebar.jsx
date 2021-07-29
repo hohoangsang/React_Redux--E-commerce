@@ -10,10 +10,6 @@ function Sidebar(props) {
         staticProducts,
         products,
         checked,
-        renderProductByCategories,
-        resetFilter,
-        filterType,
-        filterBrand,
         handleClickPrice,
         handleSubmitPrices
     } = props
@@ -21,22 +17,17 @@ function Sidebar(props) {
     return (
         <div className = "filter">
             <Categories
-                staticProducts = {staticProducts}
                 checked = {checked}
-                renderProductByCategories = {renderProductByCategories}
-                resetFilter = {resetFilter}
             />
             <div className="filter__category">
                 <h2 className = "categories__title">Refine By</h2>
                 <Type 
                     staticProducts = {staticProducts}
                     checked = {checked}
-                    filterType = {filterType}
                 />
                 <Brand 
                     staticProducts = {staticProducts}
                     checked = {checked}
-                    filterBrand = {filterBrand}
                 />
                 <Rating 
                     products = {products}

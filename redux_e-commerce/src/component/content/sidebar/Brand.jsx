@@ -1,57 +1,29 @@
 import React, { useState, useEffect } from 'react'
 import { getListFilter } from '../../../util';
+import { useSelector, useDispatch } from 'react-redux';
+import { filterBrand, filterSearchBrand } from '../../../redux/action/FilterAction'
 
-function Brand(props) {
-    const {
-        staticProducts,
-        checked,
-        filterBrand
-    } = props
+function Brand() {
+    const [input, setInput] = useState("");
 
-    const [checkedBrand, setCheckedBrand] = useState([]);
-    const [values, setValues] = useState("");
-    const [isChange, setIsChange] = useState(false);
+    const { allData } = useSelector(state => state.products)
+    const arrayBrand = useSelector(state => state.filter.brand)
+    const dispatch = useDispatch()
 
-    const listBrand = getListFilter(staticProducts, "brand")
-
-    useEffect(() => {
-        if(!checked){
-            setCheckedBrand([])
-        }
-        return setIsChange(false)
-    }, [checked, isChange])
-
-
-    const setUpCheckedBrand = (values) => {
-        let newArray = checkedBrand;
-        let find = newArray.indexOf(values);
-        if (find > -1) {
-            newArray.splice(find, 1);
-        } else {
-            newArray.push(values);
-        }
-
-        console.log(newArray)
-        return setCheckedBrand(newArray);
-    }
-
+    const listBrand = getListFilter(allData, "brand")
 
     const handleChange = (name) => {
-        setIsChange(true)
-        setUpCheckedBrand(name)
-        filterBrand(checkedBrand, "brand");
+        dispatch(filterBrand(name))
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setUpCheckedBrand(values);
-        filterBrand(checkedBrand, "brand");
-        setValues("");
+        dispatch(filterBrand(input))
+        setInput("");
     }
 
-    const handleChangeValues = (event) => {
-        setValues(event.target.value);
-        console.log(values);
+    const handleChangeInput = (event) => {
+        setInput(event.target.value);
     }
 
     return (
@@ -66,8 +38,8 @@ function Brand(props) {
                         name="values"
                         type="text"
                         placeholder="Search for other..."
-                        value={values}
-                        onChange={(event) => handleChangeValues(event)}
+                        value={input}
+                        onChange={(event) => handleChangeInput(event)}
                     />
                 </form>
                 <nav>
@@ -81,11 +53,11 @@ function Brand(props) {
                                                 type="checkbox"
                                                 name={item}
                                                 value={item}
-                                                checked={checkedBrand.includes(item)}
+                                                checked={arrayBrand.includes(item)}
                                                 onChange={() => handleChange(item)}
                                                 className="brand-item--input" />
                                             <span className="item--name">{item}</span>
-                                            <span className="item-count">({staticProducts.filter(product => product.brand === item).length})</span>
+                                            <span className="item-count">({allData.filter(product => product.brand === item).length})</span>
                                         </label>
                                     </li>
                                 )
