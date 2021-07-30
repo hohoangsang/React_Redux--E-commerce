@@ -1,4 +1,4 @@
-import { put, select, takeLatest } from 'redux-saga/effects';
+import { put, select, takeLatest, call, join, fork } from 'redux-saga/effects';
 
 import productsApi from '../../api/productsApi'
 import { 
@@ -12,30 +12,40 @@ import {
 
 function* fectchAllProducts() {
     try {
-        const data  = yield productsApi.getAll();
+        const { getAll } = productsApi
+        const { data }= yield call(getAll)
         yield put(
-            getAllProductsSuccess(data)
-        )
+            getAllProductsSuccess({
+                data,
+                total: data.length
+            })
+        );
     } catch (error) {
         console.log("Saga Fail: ", error)
         yield put(
             getAllProductsFail(error)
-        )
+        );
     }
 }
 
 function* fetchFilterProducts() {
     try {
+        const { getAll } = productsApi
         const filterParams = yield select((state) => state.filter);
-        const data = yield productsApi.getAll(filterParams)
+        const forkTask = yield fork(getAll, filterParams)
+        const { data, headers} = yield join(forkTask)
+
         yield put(
-            getFilterProductsSuccess(data)
-        )
+            getFilterProductsSuccess({
+                data,
+                total: headers["x-total-count"]
+            })
+        );
     } catch (error) {
         console.log("Saga Fail: ", error)
         yield put(
             getFilterProductsFail(error)
-        )
+        );
     }
 }
 

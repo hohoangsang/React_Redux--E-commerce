@@ -4,7 +4,6 @@ import {
     FILTER_PAGE,
     FILTER_TYPE,
     FILTER_BRAND,
-    FILTER_SEARCH_BRAND,
     FILTER_RATING,
     FILTER_PRICE_RANGE,
     FILTER_SEARCH_PRICE_FROM_TO,
@@ -18,7 +17,8 @@ const initialState = {
     _sort: "",
     type: [],
     brand: [],
-    q: ""
+    q: "",
+    isClear: false,
 }
 
 const FilterReducer = (state = initialState, action) => {
@@ -29,7 +29,8 @@ const FilterReducer = (state = initialState, action) => {
             return {
                 ...newState,
                 _page: 1,
-                "hierarchicalCategories.lvl0": action.payload
+                "hierarchicalCategories.lvl0": action.payload,
+                isClear: true
             }
         }
 
@@ -37,7 +38,8 @@ const FilterReducer = (state = initialState, action) => {
             return {
                 ...state,
                 _page: 1,
-                "hierarchicalCategories.lvl1": action.payload
+                "hierarchicalCategories.lvl1": action.payload,
+                isClear: true
             }
         }
 
@@ -60,7 +62,8 @@ const FilterReducer = (state = initialState, action) => {
             return {
                 ...newState,
                 _page: 1,
-                type: arrayType
+                type: arrayType,
+                isClear: true
             }
         }
 
@@ -76,7 +79,8 @@ const FilterReducer = (state = initialState, action) => {
             return {
                 ...newState,
                 _page: 1,
-                brand: arrayBrand
+                brand: arrayBrand,
+                isClear: true
             }
         }
 
@@ -89,7 +93,8 @@ const FilterReducer = (state = initialState, action) => {
             return {
                 ...newState,
                 _page: 1,
-                price_range: action.payload
+                price_range: action.payload,
+                isClear: true
             }
         }
         
@@ -104,7 +109,8 @@ const FilterReducer = (state = initialState, action) => {
             }
             return {
                 ...newState,
-                _page: 1
+                _page: 1,
+                isClear: true
             }
         }
 
@@ -117,7 +123,11 @@ const FilterReducer = (state = initialState, action) => {
                 newState._sort="price"
                 newState._order=action.payload
             }
-            return newState
+            return {
+                ...newState,
+                _page: 1,
+                isClear: true
+            }
         }
 
         case FILTER_CLEAR: {
@@ -127,7 +137,8 @@ const FilterReducer = (state = initialState, action) => {
                 _sort: "",
                 type: [],
                 brand: [],
-                q: ""
+                q: "",
+                isClear: false
             }
         }
         default: 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { getListFilter } from '../../../util';
 import { useSelector, useDispatch } from 'react-redux'
 import { filterType } from '../../../redux/action/FilterAction'
@@ -7,8 +7,6 @@ function Type() {
     const checkedType = useSelector(state => state.filter.type)
     const allData = useSelector(state => state.products.allData)
     const dispatch = useDispatch()
-
-    console.log(checkedType)
 
     const handleChange = (item) => {
         dispatch(filterType(item))

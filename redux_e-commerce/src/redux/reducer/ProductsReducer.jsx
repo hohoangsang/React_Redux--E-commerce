@@ -12,7 +12,7 @@ const initialState = {
     allData: [],
     filterData: [],
     loading: false,
-    error: null,
+    error: null
 }
 
 const ProductsReducer = (state = initialState, action) => {
@@ -22,16 +22,17 @@ const ProductsReducer = (state = initialState, action) => {
                 ...state,
                 allData: [],
                 loading: true,
-                error: null,
+                error: null
             }
         }
 
         case GET_ALL_PRODUCTS_SUCCESS: {
             return {
                 ...state,
-                allData: action.payload,
+                allData: action.payload.data,
                 loading: false,
                 error: null,
+                total: action.payload.total
             }
         }
 
@@ -39,7 +40,7 @@ const ProductsReducer = (state = initialState, action) => {
             return {
                 ...state,
                 error: action.payload,
-                loading: false,
+                loading: false
             }
         }
 
@@ -48,16 +49,17 @@ const ProductsReducer = (state = initialState, action) => {
                 ...state,
                 filterData: [],
                 loading: true,
-                error: null,
+                error: null
             }
         }
 
         case GET_FILTER_PRODUCTS_SUCCESS: {
             return {
                 ...state,
-                filterData: action.payload,
+                filterData: action.payload.data,
                 loading: false,
                 error: null,
+                total: action.payload.total
             }
         }
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {filterCategories, filterSubCategories, filterClear } from '../../../redux/action/FilterAction'
 
@@ -6,6 +6,7 @@ function Categories() {
     const [activeCategories, setActiveCategories] = useState(null)
     const [activeSubCategories, setActiveSubCategories] = useState(null)
     const allProducts = useSelector(state => state.products.allData)
+    const { isClear } = useSelector(state => state.filter)
     const dispatch = useDispatch()
 
     const resetFilter = () => {
@@ -84,7 +85,7 @@ function Categories() {
 
     return (
         <div className="filter__category">
-            <div className="clear-filter-btn">
+            <div className="clear-filter-btn" style = {{display: isClear ? "block" : "none"}}>
                 <button onClick = {() => resetFilter()}><i className="fas fa-eraser"></i> Clear all filter</button>
             </div>
             <div>

@@ -7,38 +7,22 @@ import Type from './Type'
 
 function Sidebar(props) {
     const {
-        staticProducts,
         products,
         checked,
-        handleClickPrice,
-        handleSubmitPrices
     } = props
 
     return (
         <div className = "filter">
-            <Categories
-                checked = {checked}
-            />
+            <Categories />
             <div className="filter__category">
                 <h2 className = "categories__title">Refine By</h2>
-                <Type 
-                    staticProducts = {staticProducts}
-                    checked = {checked}
-                />
-                <Brand 
-                    staticProducts = {staticProducts}
-                    checked = {checked}
-                />
+                <Type />
+                <Brand />
                 <Rating 
                     products = {products}
                     checked = {checked}
                 />
-                <Prices 
-                    products = {products}
-                    checked = {checked}
-                    handleClickPrice = {handleClickPrice}
-                    handleSubmitPrices = {handleSubmitPrices}
-                />
+                <Prices />
             </div>
         </div>
         

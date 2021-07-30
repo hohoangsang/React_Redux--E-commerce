@@ -310,10 +310,7 @@
                     text-decoration: underline;
                 }
                 .disable{
-                    color: $black;
-                }
-                .disable:hover{
-                    text-decoration: none;
+                    display: none;
                 }
                 .prev.btn{
                     position: relative;

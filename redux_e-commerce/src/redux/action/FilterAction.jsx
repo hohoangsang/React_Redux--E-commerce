@@ -3,7 +3,6 @@ export const FILTER_SUB_CATEGORIES = "FILTER_SUB_CATEGORIES"
 export const FILTER_PAGE = "FILTER_PAGE"
 export const FILTER_TYPE = "FILTER_TYPE"
 export const FILTER_BRAND = "FILTER_BRAND"
-export const FILTER_SEARCH_BRAND = "FILTER_SEARCH_BRAND"
 export const FILTER_RATING = "FILTER_RATING"
 export const FILTER_PRICE_RANGE = "FILTER_PRICE_RANGE"
 export const FILTER_SEARCH_PRICE_FROM_TO = "FILTER_SEARCH_PRICE_FROM_TO"
@@ -41,13 +40,6 @@ export const filterType = (type) => {
 export const filterBrand = (brand) => {
     return {
         type: FILTER_BRAND,
-        payload: brand
-    }
-}
-
-export const filterSearchBrand = (brand) => {
-    return {
-        type: FILTER_SEARCH_BRAND,
         payload: brand
     }
 }

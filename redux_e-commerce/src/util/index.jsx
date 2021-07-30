@@ -1,5 +1,3 @@
-import { forwardRef } from "react";
-
 export const getListFilter = (staticArray, field) => {
     let listFilter = [];
     for (let item of staticArray) {
