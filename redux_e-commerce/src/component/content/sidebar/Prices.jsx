@@ -1,34 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { filterPriceRange, filterSearchPriceFromTo } from '../../../redux/action/FilterAction';
+import { getListFilter } from '../../../util/index'
 
-function Prices(props) {
-    const {
-        products,
-        checked,
-        handleClickPrice,
-        handleSubmitPrices
-    } = props
-
+function Prices() {
     const [inputs, setInputs] = useState({
         firstNumber: "",
         lastNumber: "",
     })
 
-    useEffect(() => {
-        if(!checked){
-            setInputs({
-                firstNumber: "",
-                lastNumber: "",
-            })
-        }
-    }, [checked])
+    const { allData } = useSelector(state => state.products);
+    const dispatch = useDispatch();
 
-    let pricesRange = products.map(item => {
-        return item.price_range
-    })
-
-    pricesRange = [...new Set(pricesRange)]
-
-    pricesRange.sort();
+    let pricesRange = getListFilter(allData, "price_range");
 
     for (let i = 0; i < pricesRange.length - 2; i++) {
         for (let j = i + 1; j < pricesRange.length - 1; j++) {
@@ -42,6 +26,10 @@ function Prices(props) {
         }
     }
 
+    const handleClickPrice = (price_range) => {
+        dispatch(filterPriceRange(price_range))
+    }
+
     const handleChangePrice = (event) => {
         setInputs({
             ...inputs,
@@ -51,13 +39,7 @@ function Prices(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        handleSubmitPrices(inputs.firstNumber, inputs.lastNumber)
-        if (checked){
-            setInputs({
-                firstNumber: '',
-                lastNumber: ''
-            })
-        }
+        dispatch(filterSearchPriceFromTo(inputs.firstNumber, inputs.lastNumber))
     }
 
 
@@ -68,7 +50,7 @@ function Prices(props) {
                 <nav>
                     <ul>
                         {pricesRange.map((item, key) => {
-                            return (item.indexOf("-") == -1
+                            return (item.indexOf("-") === -1
                                 ? <li key = {key} onClick = {() => handleClickPrice(item)}>{item}</li>
                                 : <li key = {key} onClick = {() => handleClickPrice(item)}>$ {item}</li>)
                         })}
@@ -83,7 +65,6 @@ function Prices(props) {
                             name="firstNumber"
                             value = {inputs.firstNumber}
                             onChange={handleChangePrice}
-                            // value={this.state.firstNumber} 
                         />
                     </label>
                     <span className="price-ranges--separator">to</span>
@@ -95,7 +76,6 @@ function Prices(props) {
                             name="lastNumber"
                             value = {inputs.lastNumber}
                             onChange={handleChangePrice}
-                            // value={this.state.lastNumber} 
                         />
                     </label>
                     <br />

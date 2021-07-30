@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Pagination from './Pagination'
 import Products from './Products'
 import Sort from './Sort'
+import { useSelector } from 'react-redux'
+import Loading from '../Loading'
 
 function Article(props) {
     const {
@@ -10,39 +12,18 @@ function Article(props) {
         handleOnClickPageBtn
     } = props;
 
-    const [isChange, setIsChange] = useState(false)
-
-    const handleSortProducts = (event) => {
-        setIsChange(true)
-        let sort = event.target.value;
-        products.sort((a,b) => {
-            switch (sort){
-                case "asc": 
-                    return (a.price - b.price);
-                    break;
-                case "desc":
-                    return (b.price - a.price);
-                    break;
-                default:
-                    return (a.id - b.id)
-            }
-        })
-    }
-
-    useEffect(() => {
-        return setIsChange(false)
-    }, [isChange])
+    const { loading } = useSelector(state => state.products)
 
     return (
         <article  className = "article">
-            <Sort handleSortProducts = {handleSortProducts}/>
-            <Products products = {products}/>
+            <Sort />
+            {
+                loading 
+                    ? <Loading></Loading>
+                    : <Products products = {products}/>
+            }
             <div className = "pagination">
-                <Pagination 
-                    products = {products}
-                    staticProducts = {staticProducts}
-                    handleOnClickPageBtn = {handleOnClickPageBtn}  
-                />
+                <Pagination />
             </div>
         </article>
     )
