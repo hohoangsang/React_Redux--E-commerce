@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { getListFilter } from '../../../util';
 import { useSelector, useDispatch } from 'react-redux';
-import { filterBrand, filterSearchBrand } from '../../../redux/action/FilterAction'
+import { filterBrand } from '../../../redux/action/FilterAction'
 
 function Brand() {
     const [input, setInput] = useState("");

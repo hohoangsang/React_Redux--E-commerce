@@ -1,3 +1,4 @@
+export const FILTER_SEARCH_PRODUCTS = "FILTER_SEARCH_PRODUCTS"
 export const FILTER_CATEGORIES = "FILTER_CATEGORIES"
 export const FILTER_SUB_CATEGORIES = "FILTER_SUB_CATEGORIES"
 export const FILTER_PAGE = "FILTER_PAGE"
@@ -8,6 +9,13 @@ export const FILTER_PRICE_RANGE = "FILTER_PRICE_RANGE"
 export const FILTER_SEARCH_PRICE_FROM_TO = "FILTER_SEARCH_PRICE_FROM_TO"
 export const FILTER_SORT = "FILTER_SORT"
 export const FILTER_CLEAR = "FILTER_CLEAR"
+
+export const filterSearchProducts = (search) => {
+    return {
+        type: FILTER_SEARCH_PRODUCTS,
+        payload: search
+    }
+}
 
 export const filterCategories = (categories) => {
     return {

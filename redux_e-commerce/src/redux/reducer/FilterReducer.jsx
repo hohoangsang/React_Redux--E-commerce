@@ -1,4 +1,5 @@
 import {
+    FILTER_SEARCH_PRODUCTS,
     FILTER_CATEGORIES,
     FILTER_SUB_CATEGORIES,
     FILTER_PAGE,
@@ -19,10 +20,18 @@ const initialState = {
     brand: [],
     q: "",
     isClear: false,
+    _order:"feature"
 }
 
 const FilterReducer = (state = initialState, action) => {
     switch (action.type) {
+        case FILTER_SEARCH_PRODUCTS: {
+            return {
+                ...state,
+                q: action.payload,
+                isClear: true
+            }
+        }
         case FILTER_CATEGORIES: {
             let newState = {...state}
             delete newState["hierarchicalCategories.lvl1"]
@@ -30,7 +39,8 @@ const FilterReducer = (state = initialState, action) => {
                 ...newState,
                 _page: 1,
                 "hierarchicalCategories.lvl0": action.payload,
-                isClear: true
+                isClear: true,
+                q:""
             }
         }
 
@@ -39,14 +49,16 @@ const FilterReducer = (state = initialState, action) => {
                 ...state,
                 _page: 1,
                 "hierarchicalCategories.lvl1": action.payload,
-                isClear: true
+                isClear: true,
+                q:""
             }
         }
 
         case FILTER_PAGE: {
             return{
                 ...state,
-                _page: action.payload
+                _page: action.payload,
+                q:""
             }
         }
 
@@ -63,7 +75,8 @@ const FilterReducer = (state = initialState, action) => {
                 ...newState,
                 _page: 1,
                 type: arrayType,
-                isClear: true
+                isClear: true,
+                q:""
             }
         }
 
@@ -80,12 +93,19 @@ const FilterReducer = (state = initialState, action) => {
                 ...newState,
                 _page: 1,
                 brand: arrayBrand,
-                isClear: true
+                isClear: true,
+                q:""
             }
         }
 
         case FILTER_RATING: {
-            return state
+            return {
+                ...state,
+                _page: 1,
+                rating: action.payload,
+                isClear: true,
+                q:""
+            }
         }
 
         case FILTER_PRICE_RANGE: {
@@ -94,7 +114,8 @@ const FilterReducer = (state = initialState, action) => {
                 ...newState,
                 _page: 1,
                 price_range: action.payload,
-                isClear: true
+                isClear: true,
+                q:""
             }
         }
         
@@ -110,7 +131,8 @@ const FilterReducer = (state = initialState, action) => {
             return {
                 ...newState,
                 _page: 1,
-                isClear: true
+                isClear: true,
+                q:""
             }
         }
 
@@ -126,7 +148,8 @@ const FilterReducer = (state = initialState, action) => {
             return {
                 ...newState,
                 _page: 1,
-                isClear: true
+                isClear: true,
+                q:""
             }
         }
 
@@ -138,7 +161,8 @@ const FilterReducer = (state = initialState, action) => {
                 type: [],
                 brand: [],
                 q: "",
-                isClear: false
+                isClear: false,
+                _order:"feature"
             }
         }
         default: 
