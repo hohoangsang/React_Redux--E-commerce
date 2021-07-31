@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { filterSearchProducts } from '../../redux/action/FilterAction';
 
-function Header(props) {
-    const {
-        searchProducts
-    } = props
-
+function Header() {
     const [input, setInput] = useState("")
+    const dispatch = useDispatch();
 
     const handleChange = (event) => {
         setInput(event.target.value)
@@ -13,7 +12,7 @@ function Header(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        searchProducts(input);
+        dispatch(filterSearchProducts(input))
         setInput("");
     }
 

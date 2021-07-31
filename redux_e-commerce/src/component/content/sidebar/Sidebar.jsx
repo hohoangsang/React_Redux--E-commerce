@@ -5,12 +5,7 @@ import Prices from './Prices'
 import Rating from './Rating'
 import Type from './Type'
 
-function Sidebar(props) {
-    const {
-        products,
-        checked,
-    } = props
-
+function Sidebar() {
     return (
         <div className = "filter">
             <Categories />
@@ -18,10 +13,7 @@ function Sidebar(props) {
                 <h2 className = "categories__title">Refine By</h2>
                 <Type />
                 <Brand />
-                <Rating 
-                    products = {products}
-                    checked = {checked}
-                />
+                <Rating />
                 <Prices />
             </div>
         </div>
