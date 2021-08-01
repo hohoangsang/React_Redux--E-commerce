@@ -8,14 +8,14 @@ import Loading from '../Loading'
 function Article() {
     const { loading } = useSelector(state => state.products)
 
+    if(loading){
+        return <Loading />
+    }
+
     return (
         <article  className = "article">
             <Sort />
-            {
-                loading 
-                    ? <Loading />
-                    : <Products/>
-            }
+            <Products/>
             <div className = "pagination">
                 <Pagination />
             </div>
